@@ -3,6 +3,7 @@
 //Date -
 //Class -
 //Lab  -
+package Chapter3;
 
 import java.util.Scanner; 
 import java.lang.Math.*;
