@@ -23,25 +23,34 @@ public class Quadratic
 
 	public Quadratic(int quadA, int quadB, int quadC)
 	{
-
+		setEquation( quadA,  quadB,  quadC);
+		
 
 	}
 
 	public void setEquation(int quadA, int quadB, int quadC)
 	{
 
-
+		a = quadA;
+		b = quadB;
+		c= quadC;
+		
+		
  	}
 
 	public void calcRoots( )
 	{
 
+		rootOne = ( -b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+		rootTwo = ( -b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
 
 	}
 
 	public void print( )
 	{
 
+		System.out.printf("root one = %.2f\n" , rootOne);
+		System.out.printf("root two = %.2f\n", rootTwo);
 
 	}
 }

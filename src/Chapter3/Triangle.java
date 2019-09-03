@@ -23,6 +23,9 @@ public class Triangle
 
 	public Triangle(int a, int b, int c)
 	{
+	sideA = a;
+	sideB = b;
+	sideC = c;
 
 
 	}
@@ -30,6 +33,10 @@ public class Triangle
 
 	public void setSides(int a, int b, int c)
 	{
+		
+		sideA = a;
+		sideB = b;
+		sideC = c;
 
 
 	}
@@ -37,20 +44,25 @@ public class Triangle
 	public void calcPerimeter( )
 	{
 
+	perimeter = sideA + sideB + sideC;
+
 
 	}
 
 	public void calcArea( )
 	{
 		double s;
-
+		calcPerimeter();
+		s =  perimeter / 2;
+		theArea = (int)(Math.sqrt(  s * (s - sideA) * (s - sideB) * (s - sideC)  ));
 
 	}
 
 	public void print( )
 	{
-
-
+		System.out.println("Area == " + theArea);
+	
 		System.out.println("\n\n");
 	}
 }
+
