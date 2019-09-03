@@ -3,7 +3,7 @@
 //Date -
 //Class -
 //Lab  -
-
+package Chapter4;
 import static java.lang.System.*;
 
 public class StringRipper
