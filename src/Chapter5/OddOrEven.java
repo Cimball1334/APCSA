@@ -3,7 +3,7 @@
 //Date -
 //Class - 
 //Lab  -
-
+package Chapter5;
 import static java.lang.System.*;
 
 public class OddOrEven

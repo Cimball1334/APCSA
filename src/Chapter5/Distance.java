@@ -3,7 +3,7 @@
 //Date -
 //Class -
 //Lab  -
-
+package Chapter5;
 import java.util.Scanner;
 import static java.lang.System.*;
 import static java.lang.Math.*;

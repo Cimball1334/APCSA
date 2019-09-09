@@ -3,7 +3,7 @@
 //Date -
 //Class -
 //Lab  -
-
+package Chapter5;
 import javax.swing.JFrame;
 
 public class GraphicsRunner extends JFrame
