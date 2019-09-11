@@ -17,20 +17,33 @@ public class StringOddOrEven
 
 	public StringOddOrEven(String s)
 	{
+		setString(s);
 	}
 
 	public void setString(String s)
 	{
+		word = s;
 	}
 
  	public boolean isEven()
  	{
-		return false;
+ 		int num = word.length();
+		if(NumberVerify.isEven(num) == true) {
+			return true;
+		}
+ 		return false;
 	}
 
  	public String toString()
  	{
- 		String output="";
+ 		String output = "";
+ 		if(isEven() == true)
+ 		{
+ 			 output= word  + " is Even";
+ 		}else {
+ 			 output= word  + " is Odd";
+ 		}
+
  		return output;
 	}
 }
