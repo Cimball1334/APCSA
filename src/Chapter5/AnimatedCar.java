@@ -45,6 +45,7 @@ class AnimatedCar extends Canvas
 	   paint(window);	
 	}
 	
+
 	public void paint( Graphics window )
 	{
 		window.setColor(Color.BLACK);

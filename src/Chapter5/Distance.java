@@ -21,12 +21,17 @@ public class Distance
 	public Distance(int xOne, int yOne, int xTwo, int yTwo)
 	{
 
+		setCoordinates(xOne,yOne,xTwo,yTwo);
 
 	}
 
 	public void setCoordinates(int xOne, int yOne, int xTwo, int yTwo)
 	{
 
+		x1 = xOne;
+		y1 = yOne;
+		x2 = xTwo;
+		y2 = yTwo;
 
 	}
 

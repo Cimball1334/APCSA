@@ -17,6 +17,46 @@ public class CharacterRunner
 		char letter = keyboard.next().charAt(0);
 		CharacterAnalyzer test = new CharacterAnalyzer(letter);
 		out.println(test);   //A
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test);   //A
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
+		
+		out.print("Enter a letter :: ");
+		 letter = keyboard.next().charAt(0);
+		 test = new CharacterAnalyzer(letter);
+		out.println(test); 
 
 		//add more test cases
 		
