@@ -30,5 +30,51 @@ public class DistanceRunner
 		out.println(test.determineClosest());
 		
 		//add more test cases
+		
+		out.print("Enter X1 :: ");
+		 xOne = keyboard.nextInt();
+		out.print("Enter Y1 :: ");
+		 yOne = keyboard.nextInt();
+		out.print("Enter X2 :: ");
+		 xTwo = keyboard.nextInt();
+		out.print("Enter Y2 :: ");
+		 yTwo = keyboard.nextInt();
+		test.setCoordinates(xOne, yOne, xTwo, yTwo);
+		out.println(test.determineClosest());
+		
+		out.print("Enter X1 :: ");
+		 xOne = keyboard.nextInt();
+		out.print("Enter Y1 :: ");
+		 yOne = keyboard.nextInt();
+		out.print("Enter X2 :: ");
+		 xTwo = keyboard.nextInt();
+		out.print("Enter Y2 :: ");
+		 yTwo = keyboard.nextInt();
+		test.setCoordinates(xOne, yOne, xTwo, yTwo);
+		out.println(test.determineClosest());
+		
+		out.print("Enter X1 :: ");
+		 xOne = keyboard.nextInt();
+		out.print("Enter Y1 :: ");
+		 yOne = keyboard.nextInt();
+		out.print("Enter X2 :: ");
+		 xTwo = keyboard.nextInt();
+		out.print("Enter Y2 :: ");
+		 yTwo = keyboard.nextInt();
+		test.setCoordinates(xOne, yOne, xTwo, yTwo);
+		out.println(test.determineClosest());
+		
+		out.print("Enter X1 :: ");
+		 xOne = keyboard.nextInt();
+		out.print("Enter Y1 :: ");
+		 yOne = keyboard.nextInt();
+		out.print("Enter X2 :: ");
+		 xTwo = keyboard.nextInt();
+		out.print("Enter Y2 :: ");
+		 yTwo = keyboard.nextInt();
+		test.setCoordinates(xOne, yOne, xTwo, yTwo);
+		out.println(test.determineClosest());
+		
+		
 	}
 }

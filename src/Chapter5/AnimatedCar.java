@@ -59,17 +59,20 @@ class AnimatedCar extends Canvas
 
 		
 		//draw a wheel
+		window.setColor(Color.WHITE);
+		window.fillOval(x+2, y+40, 30, 30);
 		
 		
 		//draw another wheel
-		
+		window.setColor(Color.WHITE);
+		window.fillOval(x+42, y+40, 30, 30);
 		
 		//increment x by 50
 
-		
+		x+=50;
 		//if x has reached the far right side of the screen
 		//set it back to zero
-		
+		if(x > getWidth()) x =0;
 		
 	}	
 }

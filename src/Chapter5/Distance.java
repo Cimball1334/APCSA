@@ -40,16 +40,19 @@ public class Distance
 		double distanceA = 0.0, distanceB = 0.0;
 		String result="";
 
-
-
-
-
-
+		distanceA = Math.sqrt( Math.pow(x1 - 0, 2) + Math.pow(y1 - 0, 2 ));
+				
+		distanceB = Math.sqrt( Math.pow(x2 - 0, 2) + Math.pow(y2 - 0, 2 ));
+		
+		if(distanceA < distanceB)	 result = "A is closer to (0,0)";
+		if(distanceB < distanceA)	 result = "B is closer to (0,0)";
+		
+		
 		return result;
 	}
 	
 	public String toString()
 	{
-		return "";
+		return determineClosest();
 	}
 }
