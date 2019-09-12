@@ -1,0 +1,164 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=10192, tid=0x0000000000002688
+#
+# JRE version:  (8.0_221-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.221-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000275d800):  JavaThread "Unknown thread" [_thread_in_vm, id=9864, stack(0x0000000002860000,0x0000000002960000)]
+
+Stack: [0x0000000002860000,0x0000000002960000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000275d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=9864, stack(0x0000000002860000,0x0000000002960000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000082400000, size: 2012 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 37888K, used 655K [0x00000000d6180000, 0x00000000d8b80000, 0x0000000100000000)
+  eden space 32768K, 2% used [0x00000000d6180000,0x00000000d6223d80,0x00000000d8180000)
+  from space 5120K, 0% used [0x00000000d8680000,0x00000000d8680000,0x00000000d8b80000)
+  to   space 5120K, 0% used [0x00000000d8180000,0x00000000d8180000,0x00000000d8680000)
+ ParOldGen       total 86016K, used 0K [0x0000000082400000, 0x0000000087800000, 0x00000000d6180000)
+  object space 86016K, 0% used [0x0000000082400000,0x0000000082400000,0x0000000087800000)
+ Metaspace       used 752K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 76K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011e20000,0x0000000012210000] byte_map_base: 0x0000000011a0e000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000700a5ce0
+ Begin Bits: [0x0000000012ab0000, 0x0000000014a20000)
+ End Bits:   [0x0000000014a20000, 0x0000000016990000)
+
+Polling page: 0x0000000000ae0000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x0000000002a60000, 0x0000000002cd0000, 0x0000000011a60000]
+ total_blobs=58 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.017 loading class java/lang/Short
+Event: 0.017 loading class java/lang/Short done
+Event: 0.017 loading class java/lang/Integer
+Event: 0.017 loading class java/lang/Integer done
+Event: 0.017 loading class java/lang/Long
+Event: 0.017 loading class java/lang/Long done
+Event: 0.017 loading class java/lang/NullPointerException
+Event: 0.017 loading class java/lang/NullPointerException done
+Event: 0.017 loading class java/lang/ArithmeticException
+Event: 0.017 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff662440000 - 0x00007ff662477000 	C:\Program Files\Java\jre1.8.0_221\bin\javaw.exe
+0x00007ffea1810000 - 0x00007ffea19f1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffe9eca0000 - 0x00007ffe9ed51000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffe9e910000 - 0x00007ffe9eb83000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffea1660000 - 0x00007ffea1701000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffe9f2f0000 - 0x00007ffe9f38e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffe9efa0000 - 0x00007ffe9effb000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffe9f390000 - 0x00007ffe9f4b4000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffe9f0b0000 - 0x00007ffe9f240000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffe9e890000 - 0x00007ffe9e8b0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffe9f2c0000 - 0x00007ffe9f2e8000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffe9e6f0000 - 0x00007ffe9e881000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffe9e360000 - 0x00007ffe9e3ff000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffe9e400000 - 0x00007ffe9e4f8000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffe975e0000 - 0x00007ffe97849000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.1006_none_d3fbb8f77c940c3f\COMCTL32.dll
+0x00007ffe9f6b0000 - 0x00007ffe9f9d1000 	C:\WINDOWS\System32\combase.dll
+0x00007ffe9e2e0000 - 0x00007ffe9e359000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffe9ed60000 - 0x00007ffe9ed8d000 	C:\WINDOWS\System32\IMM32.DLL
+0x000000006f7a0000 - 0x000000006f872000 	C:\Program Files\Java\jre1.8.0_221\bin\msvcr100.dll
+0x000000006f880000 - 0x0000000070125000 	C:\Program Files\Java\jre1.8.0_221\bin\server\jvm.dll
+0x00007ffe9ec90000 - 0x00007ffe9ec98000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffe996e0000 - 0x00007ffe996e9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffe8f3b0000 - 0x00007ffe8f3d3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffe93910000 - 0x00007ffe9391a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffe9f4c0000 - 0x00007ffe9f52c000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffe8f380000 - 0x00007ffe8f3aa000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffe9eb90000 - 0x00007ffe9ebd9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffe97890000 - 0x00007ffe9789f000 	C:\Program Files\Java\jre1.8.0_221\bin\verify.dll
+0x00007ffe92500000 - 0x00007ffe92529000 	C:\Program Files\Java\jre1.8.0_221\bin\java.dll
+0x00007ffe924c0000 - 0x00007ffe924d6000 	C:\Program Files\Java\jre1.8.0_221\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 
+java_command: Alphabetical
+java_class_path (initial): A:\Apps\Programming\Eclipse\GitRepositories\APCSA\APCSA\bin
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_221/bin/server;C:/Program Files/Java/jre1.8.0_221/bin;C:/Program Files/Java/jre1.8.0_221/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\kimba\AppData\Local\Microsoft\WindowsApps;;C:\Users\kimba\OneDrive\Desktop;
+USERNAME=kimba
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.753)
+
+CPU:total 6 (initial active 6) (6 cores per cpu, 1 threads per core) family 6 model 158 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8237768k(707676k free), swap 33403592k(5764k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.221-b11) for windows-amd64 JRE (1.8.0_221-b11), built on Jul  4 2019 04:39:29 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Wed Sep 11 21:01:23 2019
+timezone: Eastern Daylight Time
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
