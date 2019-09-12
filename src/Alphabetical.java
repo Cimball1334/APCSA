@@ -14,10 +14,12 @@ public class Alphabetical {
 	}
 	
 	private static void print(String[] words) {
-//		Arrays.sort(words);
+		
 		System.out.println(Arrays.toString(words));
-//		for(int i = 0; i < words.length; i++)
-//	            System.out.println(words[i]);
+		Arrays.sort(words);
+		
+		for(int i = 0; i < words.length; i++)
+	            System.out.println(words[i]);
 		
 	}
 
@@ -26,8 +28,10 @@ public class Alphabetical {
 			if((int)(s.charAt(i)) == 32){ 
 				newWord(i);
 				break;
+			}else {
+				
 			}
-			if(i >= s.length() && (int)(s.charAt(i)) != 32) {
+			if(i >= s.length()-1 && (int)(s.charAt(i)) != 32) {
 				words.add(sentence);
 				break;	
 			}
@@ -37,7 +41,10 @@ public class Alphabetical {
 
 	public static void newWord(int i) {
 		words.add(sentence.substring(0, i));
+		
 		sentence = sentence.substring(i +1, sentence.length());
+		
+
 		findSpace(sentence);
 	}
 	
