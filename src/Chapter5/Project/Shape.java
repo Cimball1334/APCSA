@@ -69,9 +69,23 @@ public class Shape
    {
    	//add code here
    }
+   
+   public void setXSpeed(int i) {
+		//add code
+	   
+	}
+   
+   public int getXSpeed() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 
    public String toString()
    {
    	return xPos+" "+yPos+" "+width+" "+height+" "+color+" "+xSpeed+" "+ySpeed;
    }
+
+
+
+
 }
