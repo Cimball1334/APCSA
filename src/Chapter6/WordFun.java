@@ -17,25 +17,30 @@ public class WordFun
 
 	public WordFun(String w)
 	{
+		setWord(w);
 	}
 
 	public void setWord(String w)
 	{
+		word = w;
 	}
 
 	public void makeUpper()
 	{
+		word = word.toUpperCase();
 	}
 
 	public void addHyphen()
 	{
 		int loc;
+		loc = word.indexOf(" ");
+		word = word.substring(0,loc) + "-" + word.substring(loc + 1);
 
 
 	}
 
 	public String toString()
 	{
-		return "";
+		return "" + word;
 	}
 }

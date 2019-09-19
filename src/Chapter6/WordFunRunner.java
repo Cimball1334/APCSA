@@ -19,6 +19,34 @@ public class WordFunRunner
 	   out.println(test);
 
 	   //add more test cases
-
+	   
+	   test.setWord("Jim Bob");
+	   out.println(test);
+	   test.makeUpper();
+	   out.println(test);
+	   test.addHyphen();
+	   out.println(test);
+	   
+	   test.setWord("Computer Science");
+	   out.println(test);
+	   test.makeUpper();
+	   out.println(test);
+	   test.addHyphen();
+	   out.println(test);
+	   
+	   test.setWord("UIL TCEA");
+	   out.println(test);
+	   test.makeUpper();
+	   out.println(test);
+	   test.addHyphen();
+	   out.println(test);
+	   
+	   test.setWord("State Champions");
+	   out.println(test);
+	   test.makeUpper();
+	   out.println(test);
+	   test.addHyphen();
+	   out.println(test);
+	   
 	}
 }

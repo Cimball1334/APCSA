@@ -18,19 +18,27 @@ public class WordsCompare
 
 	public WordsCompare(String one, String two)
 	{
+		setWords(one,two);
 	}
 
 	public void setWords(String one, String two)
 	{
-
+wordOne = one;
+wordTwo = two;
 	}
 
 	public void compare()
 	{
+		if(wordOne.compareTo(wordTwo) < 0)
+			compare = -1;
+			else
+				compare = 1;
+		
 	}
 
 	public String toString()
 	{
+		compare();
 		if(compare<0)
 		{
 			return wordOne + " should be placed before " + wordTwo + "\n";

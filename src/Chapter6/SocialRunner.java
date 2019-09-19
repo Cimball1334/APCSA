@@ -12,6 +12,10 @@ public class SocialRunner
 	public static void main( String args[] )
 	{
 		//add test cases
+		Social test = new Social();
+		
+		test.setWord("456-56-234");
+		out.println(test);
 		
 	}
 }
