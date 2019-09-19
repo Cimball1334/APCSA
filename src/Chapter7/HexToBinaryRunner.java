@@ -13,7 +13,15 @@ public class HexToBinaryRunner
 {
 	public static void main( String args[] )
 	{
-		//add test cases	
+		//add test cases
+		HexToBinary test = new HexToBinary();
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter a Letter : ");
+		test.setHex(input.next);
+		
+	
+		
 
 	}
 }

@@ -14,29 +14,45 @@ public class HexToBinary
 	public HexToBinary()
 	{
 
-
+		setHex('g');	
+		
 	}
 
 	public HexToBinary(char hexNum)
 	{
-
+		
+		setHex(hexNum);
 
 	}
 
 	public void setHex(char hexNum)
 	{
 
+		hex = hexNum;
 
 	}
 
 	public String getBinary()
 	{
-
-		return "";
+		if(hex == 'A') {
+			return "1010";
+		}else if (hex == 'B') {
+			return "1011";
+		}else if (hex == 'C') {
+			return "1100";
+		}else if (hex == 'D') {
+			return "1101";
+		}else if (hex == 'E') {
+			return "1110";
+		}else if (hex == 'F') {
+			return "1111";
+		}
+		
+		return "[REDACTED]";
 	}
 
 	public String toString()
 	{
-		return "";
+		return hex + " is " + getBinary() + " in binary";
 	}
 }
