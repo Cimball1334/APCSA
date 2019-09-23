@@ -21,37 +21,45 @@ public class Monster
 	public Monster(String n, int size)
 	{
 
-
+		name = n;
+		howBig = size;
+		
 	}
 
 	public String getName()
 	{
-		return "";
+		return name;
 	}
 	
 	public int getHowBig()
 	{
-		return 0;
+		return howBig;
 	}
 	
 	public boolean isBigger(Monster other)
 	{
+		if (getHowBig() > other.getHowBig() )
+			return true;
 		return false;
 	}
 	
 	public boolean isSmaller(Monster other)
 	{
 		//call isBigger() use !
+		if(!isBigger(other)) 
+			return true;
 		return false;
 	}
 
 	public boolean namesTheSame(Monster other)
 	{
+		if(getName().equals(other.getName()))
+			return true;
 		return false;
 	}
 	
 	public String toString()
 	{
-		return "";
+		return "monster --" + getName() + " "  + getHowBig();
 	}
 }
