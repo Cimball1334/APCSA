@@ -18,7 +18,46 @@ public class HexToBinaryRunner
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("Enter a Letter : ");
-		test.setHex(input.next);
+		char letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+		
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
+		
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
+		System.out.println("Enter a Letter : ");
+		letter = input.next().charAt(0);
+		test.setHex( letter);
+		out.println(test);
+
 		
 	
 		
