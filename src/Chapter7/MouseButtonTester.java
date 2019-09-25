@@ -55,6 +55,7 @@ public class MouseButtonTester extends JFrame implements MouseListener
 			window.fillRect(0,0,WIDTH, HEIGHT);
 				
 			//change isFirstRun
+			isFirstRun = false;
 		
 		}
 		
@@ -69,13 +70,15 @@ public class MouseButtonTester extends JFrame implements MouseListener
 	{
 		if(mouseButton==MouseEvent.BUTTON1)		//left mouse button pressed
 		{
-			//window.drawString("BUTTON1", 50,200);  //debug code
+			window.drawString("BUTTON1", 50,200);  //debug code
 			window.setColor(Color.RED);
 			window.drawRect(mouseX,mouseY,10,10);
 		}
-		//right mouse button pressed
+		if(mouseButton==MouseEvent.BUTTON3)//right mouse button pressed
 		{
-			
+			window.drawString("BUTTON2", 50,200);
+			window.setColor(Color.BLUE);
+			window.drawOval(mouseX, mouseY, 10, 10);
 		
 		}
 		//any other mouse button pressed

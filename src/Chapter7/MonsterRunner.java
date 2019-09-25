@@ -21,7 +21,7 @@ public class MonsterRunner
 		int firstSize = input.nextInt()
 ;		//instantiate monster one
 		Monster m1 = new Monster(firstName,firstSize);
-		
+		out.println("\n");
 		//ask for name and size
 		System.out.println("Enter 2nd monsters name : ");
 		String secondName = input.nextLine();
