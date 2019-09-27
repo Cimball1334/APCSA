@@ -46,6 +46,19 @@ public class Magpie3
 				|| findKeyword(statement, "brother") >= 0)
 		{
 			response = "Tell me more about your family.";
+		}else if (findKeyword(statement,"dog") >= 0 
+				|| statement.indexOf("cat") >= 0) {
+			response = "Tell me more about your pets";
+		}else if (findKeyword(statement, "Mr. Timmerman" ) >= 0 ) 
+		{
+			response = "He sounds like a good teacher";
+		}
+		else if (findKeyword(statement, "daddy") >= 0) {
+			response = "spelt 'ie'";
+		}else if (findKeyword(statement, "mack") >= 0) {
+			response = "mack math is crused";
+		}else if (findKeyword(statement, "craig") >= 0) {
+			response = "Craig wrote this";
 		}
 		else
 		{
