@@ -16,19 +16,19 @@ public class MonsterRunner
 		
 		//ask for name and size
 		System.out.println("Enter 1st monsters name : ");
-		String firstName = input.nextLine();
+		String name = input.next();
 		System.out.println("Enter 1st monsters size : ");
-		int firstSize = input.nextInt()
+		int size = input.nextInt()
 ;		//instantiate monster one
-		Monster m1 = new Monster(firstName,firstSize);
+		Monster m1 = new Monster(name, size);
 		out.println("\n");
 		//ask for name and size
 		System.out.println("Enter 2nd monsters name : ");
-		String secondName = input.nextLine();
+		name = input.next();
 		System.out.println("Enter 2nd monsters size : ");
-		int secondSize = input.nextInt();
+		 size = input.nextInt();
 		//instantiate monster two
-		Monster m2 = new Monster(secondName,secondSize);
+		Monster m2 = new Monster(name ,size);
 		
 		if(m1.isBigger(m2))
 			out.println("Monster 1 is bigger than Monster 2");
