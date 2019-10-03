@@ -54,7 +54,7 @@ public class Magpie4
 		else if (findKeyword(statement, "I want to", 0) >= 0)
 		{
 			response = transformIWantToStatement(statement);
-		}else if (findKeyword(statement, "I want", 0 ) >= 0) {
+		}else if (findKeyword(statement, "I want ", 0 ) >= 0) {
 			response = transformIWantSomething(statement);
 			
 		}else if(findKeyword(statement, "i", 0) >= 0 && findKeyword(statement, "you", 0) >=0) {
@@ -158,7 +158,7 @@ public class Magpie4
 		int psnOfYou = findKeyword (statement, "you", psnOfI);
 		
 		String restOfStatement = statement.substring(psnOfI + 1, psnOfYou).trim();
-		return "Why do you" + restOfStatement + " me?";
+		return "Why do you " + restOfStatement + " me?";
 		
 	}
 	

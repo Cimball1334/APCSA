@@ -53,8 +53,8 @@ public class Magpie3
 		{
 			response = "He sounds like a good teacher";
 		}
-		else if (findKeyword(statement, "daddy") >= 0) {
-			response = "spelt 'ie'";
+		else if (findKeyword(statement, "computer") >= 0) {
+			response = "I am computer";
 		}else if (findKeyword(statement, "mack") >= 0) {
 			response = "mack math is crused";
 		}else if (findKeyword(statement, "craig") >= 0) {
