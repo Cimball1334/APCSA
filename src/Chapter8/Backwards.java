@@ -1,4 +1,4 @@
-package Chapter8;
+	package Chapter8;
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -15,30 +15,36 @@ public class Backwards
 
 	public Backwards(String s)
 	{
+		setString(s);
 	}
 
 	public void setString(String s)
 	{
+		word=s;
 	}
 
 	public char getFirstChar()
 	{
-		return 0;
+		return word.charAt(0);
 	}
 
 	public char getLastChar()
 	{
-		return 0;
+		return word.charAt(word.length()-1);
 	}
 
 	public String getBackWards()
 	{
+		
 		String back="";
+		for(int i =0; i < word.length(); i++) {
+			back = back+word.charAt(word.length()- 1 - i); 
+		}
 		return back;
 	}
 
  	public String toString()
  	{
- 		return "";
+ 		return getFirstChar() + "\n" + getLastChar() + "\n" + getBackWards() + "\n" + word;
 	}
 }

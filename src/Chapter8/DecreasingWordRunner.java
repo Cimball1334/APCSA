@@ -9,6 +9,17 @@ public class DecreasingWordRunner
 {
 	public static void main ( String[] args )
 	{
-		//add test cases		
+		DecreasingWord test = new DecreasingWord();
+		test.setWord("hippo");
+		test.print();
+		test.setWord("abcd");
+		test.print();
+		test.setWord("it");
+		test.print();
+		test.setWord("a");
+		test.print();
+		test.setWord("chicken");
+		test.print();
+		
 	}
 }
