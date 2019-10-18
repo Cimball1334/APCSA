@@ -1,14 +1,22 @@
-package Chapter8;
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date -
-//Class -
-//Lab  -
+
 
 public class LoopStatsRunner
 {
 	public static void main ( String[] args )
 	{
-		//add test cases		
+		LoopStats test = new LoopStats();
+		
+		test.setNums(1,5);
+		test.getTotal();
+		System.out.println(test);
+		
+		test.setNums(2,8);
+		test.getTotal();
+		System.out.println(test);
+		
+		test.setNums(5,15);
+		test.getTotal();
+		System.out.println(test);
+		
 	}
 }

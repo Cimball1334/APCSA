@@ -1,4 +1,3 @@
-package Chapter8;
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -7,55 +6,66 @@ package Chapter8;
 
 public class LoopStats
 {
-	private int start, stop;
+    private int start, stop;
 
-	public LoopStats()
-	{
-	}
+    public LoopStats()
+    {
+        setNums(0,0);
+    }
 
-	public LoopStats(int beg, int end)
-	{
-	}
+    public LoopStats(int beg, int end)
+    {
+        setNums(beg,end);
+    }
 
-	public void setNums(int beg, int end)
-	{
+    public void setNums(int beg, int end)
+    {
+        start = beg;
+        stop = end;
+    }
 
+    public int getEvenCount()
+    {
+        int evenCount=0;
 
-	}
-
-	public int getEvenCount()
-	{
-		int evenCount=0;
-
-
-
-
-		return evenCount;
-	}
-
-	public int getOddCount()
-	{
-		int oddCount=0;
+        for(int i = start; i <= stop; i++)
+        {
+          if(i % 2 == 0) evenCount++;
+        }
 
 
+        return evenCount;
+    }
 
+    public int getOddCount()
+    {
+        int oddCount=0;
 
-
-		return oddCount;
-	}
-
-	public int getTotal()
-	{
-		int total=0;
-
+        for(int i = start; i <= stop; i++)
+        {
+          if(i % 2 != 0) oddCount++;
+        }
 
 
 
-		return total;
-	}
-	
-	public String toString()
-	{
-		return start + " " + stop;
-	}
+        return oddCount;
+    }
+
+    public int getTotal()
+    {
+        int total=0;
+
+        for(int i = start; i <= stop  ; i++)
+        {
+         total = total + i;
+        }
+
+
+        return total;
+    }
+    
+    public String toString()
+    {
+        return start + " " + stop +  "\ntotal " + getTotal() + "\neven count " + getEvenCount() + "\nodd count " + getOddCount() + "\n";
+    }
 }

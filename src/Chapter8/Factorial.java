@@ -1,4 +1,3 @@
-package Chapter8;
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -7,40 +6,46 @@ package Chapter8;
 
 public class Factorial
 {
-	private int number;
+    private int number;
 
-	public Factorial()
-	{
-	}
+    public Factorial()
+    {
+        setNum(0);
+    }
 
-	public Factorial(int num)
-	{
-	}
+    public Factorial(int num)
+    {
+        setNum(num);
+    }
 
-	public void setNum(int num)
-	{
-	}
+    public void setNum(int num)
+    {
+        number = num;
+    }
 
-	public int getNum()
-	{
-		return 0;
-	}
+    public int getNum()
+    {
+        return number;
+    }
 
-	public long getFactorial( )
-	{
-		long factorial=1;
+    public long getFactorial( )
+    {
+        long factorial=1;
+        
+        for(int i = 1 ; i <= number; i++)
+        {
+            factorial = factorial * i;
+        }
+        
 
 
 
 
+        return factorial;
+    }
 
-
-
-		return factorial;
-	}
-
-	public String toString()
-	{
-		return "factorial of " + getNum() + " is "+ getFactorial()+"\n";
-	}
+    public String toString()
+    {
+        return "factorial of " + getNum() + " is "+ getFactorial()+"\n";
+    }
 }
