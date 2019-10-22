@@ -24,14 +24,45 @@ public class TenToAny
 	public String getNewNum()
 	{
 		String newNum="", reverse = "";
-		
+		String addition;
 		
 		while( base10 >0 ){
 		 
-		
+		addition  = base10 % newBase + "";
+		base10 /= newBase;
 			
+		if( Integer.parseInt(addition) >= 10) {
+			switch(addition) {
+			
+			case "10":
+				addition = "A";
+				break;
+			case "11":
+				addition = "B";
+				break;
+			case "12":
+				addition = "C";
+				break;
+			case "13":
+				addition = "D";
+				break;
+			case "14":
+				addition = "E";
+				break;
+			case "15":
+				addition = "F";
+				break;
+				}
+			}
+		
+		reverse += addition;
+		
 		}
 		
+		
+		for(int i =0; i < reverse.length(); i++) {
+			newNum = newNum + reverse.charAt(reverse.length()- 1 - i); 
+		}
 		
 		
 		return newNum;
