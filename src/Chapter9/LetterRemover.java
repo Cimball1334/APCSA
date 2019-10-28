@@ -12,10 +12,12 @@ public class LetterRemover
 
 	public LetterRemover()
 	{
-		//call set
+		setRemover("test", 't');
 	}
 
-	//add in second constructor
+	public LetterRemover(String s, char rem) {
+		setRemover( s,  rem);
+	}
 	
 	
 	public void setRemover(String s, char rem)
@@ -26,12 +28,18 @@ public class LetterRemover
 
 	public String removeLetters()
 	{
+		int loc = sentence.indexOf(lookFor);
+		
 		String cleaned=sentence;
+		
+		while(sentence.indexOf(lookFor) != -1) {
+			cleaned = cleaned.substring(0, loc) + cleaned.substring(loc);
+		}
 		return cleaned;
 	}
 
 	public String toString()
 	{
-		return sentence + " - letter to remove " + lookFor;
+		return sentence + " - letter to remove " + lookFor +"\n" + removeLetters();
 	}
 }
