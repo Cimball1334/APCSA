@@ -27,9 +27,8 @@ class StringRemover
 	public String removeStrings()
 	{
 		String cleaned = sentence;
-	
 		
-		int loc = sentence.indexOf(remove);
+		int loc = cleaned.indexOf((String)(remove));
 
 		while(cleaned.indexOf(remove) != -1) {
 			cleaned = cleaned.substring(0, loc) + cleaned.substring(loc + remove.length());
