@@ -21,7 +21,8 @@ class StringRemover
 
 	public void setRemover(String s, String rem)
 	{
-		
+		sentence = s;
+		remove = rem;
 	}
 
 	public String removeStrings()
@@ -31,7 +32,9 @@ class StringRemover
 		int loc = cleaned.indexOf((String)(remove));
 
 		while(cleaned.indexOf(remove) != -1) {
+		
 			cleaned = cleaned.substring(0, loc) + cleaned.substring(loc + remove.length());
+			
 			loc = cleaned.indexOf(remove);
 		}
 		return cleaned;
