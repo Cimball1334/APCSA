@@ -9,7 +9,17 @@ public class StringRemoverRunner
 {
 	public static void main( String args[] )
 	{
-		//add test cases	
-											
+		StringRemover test = new StringRemover();	
+		
+		test.setRemover("xR-MxR-MHelloxR-M" , "xR-M");
+		System.out.println(test);
+		
+		test.setRemover("ssssssssxssssesssssesss" , "xs");
+		System.out.println(test);
+		
+		test.setRemover("fuqwertyqwertyqwertyqwertyqwertyn" , "qwerty");
+		System.out.println(test);
+		
+		
 	}
 }
