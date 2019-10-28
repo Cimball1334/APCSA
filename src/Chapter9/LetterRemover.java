@@ -32,14 +32,15 @@ public class LetterRemover
 		
 		String cleaned=sentence;
 		
-		while(sentence.indexOf(lookFor) != -1) {
-			cleaned = cleaned.substring(0, loc) + cleaned.substring(loc);
+		while(cleaned.indexOf(lookFor) != -1) {
+			cleaned = cleaned.substring(0, loc) + cleaned.substring(loc + 1);
+			loc = cleaned.indexOf(lookFor);
 		}
 		return cleaned;
 	}
 
 	public String toString()
 	{
-		return sentence + " - letter to remove " + lookFor +"\n" + removeLetters();
+		return sentence + " - letter to remove " + lookFor +"\n" + removeLetters() + "\n";
 	}
 }

@@ -10,21 +10,37 @@ class StringRemover
    private String sentence;
    private String remove;
 
-	//add in constructors
+	public StringRemover() {
+		
+	}
+	
+	public StringRemover(String s, String rem) {
+		setRemover( s,  rem);
+	}
 	
 
 	public void setRemover(String s, String rem)
 	{
+		
 	}
 
 	public String removeStrings()
 	{
 		String cleaned = sentence;
+	
+		
+		int loc = sentence.indexOf(remove);
+
+		while(cleaned.indexOf(remove) != -1) {
+			cleaned = cleaned.substring(0, loc) + cleaned.substring(loc + remove.length());
+			loc = cleaned.indexOf(remove);
+		}
 		return cleaned;
 	}
+	
 
 	public String toString()
 	{
-		return "";
+		return sentence + " - string to remove " + remove +"\n" + removeStrings() + "\n";
 	}
 }
