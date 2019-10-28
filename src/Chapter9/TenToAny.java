@@ -70,6 +70,6 @@ public class TenToAny
 
 	//add a toString method	
 	public String toString() {
-		return getNewNum();
+		return base10 + " base 10 is " + getNewNum() + " in base " + newBase ;
 	}
 }
