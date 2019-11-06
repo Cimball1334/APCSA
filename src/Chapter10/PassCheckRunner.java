@@ -1,4 +1,4 @@
-package Chapter10;//© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name -  
 //Date -
 //Class -
@@ -8,7 +8,7 @@ public class PassCheckRunner
 {
 	public static void main( String args[] )
 	{
-		PassCheck test = new PassCheck();
+		PassCheck test = new PassCheck("JOHN");
 		test.check();
 	} 
 }
