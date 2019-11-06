@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package Chapter11;
 //Name -
 //Date -
 //Class -
