@@ -15,6 +15,17 @@ public class TriangleOne
 	public static String createTriangle( String let, int size)
 	{
 		String output="";
+		
+		for(int a = 0; a <size; a++ ) {
+			
+			for(int b = 0; b <= a; b++) {
+				//System.out.print(let);
+				output += let;
+			}
+			//System.out.println();
+				output+= "\n";
+		}
+		
 		return output;
 	}
 }
