@@ -1,3 +1,5 @@
+package Chapter11;
+
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -33,19 +35,19 @@ public class TriangleFour
     public String toString()
     {
         String output="";
-        int macMath = size;
-        for(int i = 1; i <= size; i+=-(i-(i+1)))
+        int math = size;
+        for(int i = 1; i <= size; i++)
         {
-            for(int k = 1; k <= i - 1; k+=-(k-(k+1)))
+            for(int k = 1; k <= i - 1; k++)
             {
                 output += " ";
             }
-            for(int j = macMath; j >= 1; j--)
+            for(int j = math; j >= 1; j--)
             {
                 output += getLetter();
                 
             }
-            macMath--;
+            math--;
             output += "\n";
         }
         return output+"\n";

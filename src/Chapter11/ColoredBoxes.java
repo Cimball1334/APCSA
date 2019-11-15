@@ -29,6 +29,19 @@ class ColoredBoxes extends Canvas
 
 	public void drawBoxes(Graphics window)
 	{
-		//nested loops to draw the pretty boxes
+		int x =25, y = 100;
+		for(int i = 0; i < 9; i++) {
+			//each row
+			for(int a = 0; a < 9; a++) {
+				//each box in that row
+				window.setColor(Color.BLUE);
+				window.fillRect(x, y, 40, 40);
+				x+= 50;
+				
+			}
+			y+= 50;
+			x=25;
+		
+		}
 	}
 }

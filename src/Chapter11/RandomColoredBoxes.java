@@ -20,6 +20,7 @@ public class RandomColoredBoxes extends JPanel
 	private Timer timer;
 	private final static int SLEEP = 110;
 	
+	
 	public RandomColoredBoxes()
 	{		
 		setBackground(Color.BLACK);
@@ -50,9 +51,20 @@ public class RandomColoredBoxes extends JPanel
 	public void drawBoxes(Graphics window)
 	{
 		//for loop to to across the x - getWidth() might be useful
+		int x =25, y = 100;
+		for(int i = 0; i < 9; i++) {
+			//each row
+			for(int a = 0; a < 9; a++) {
+				//each box in that row
+				Color the = new Color((int)(Math.random() *256) , (int)(Math.random()*256), (int)(Math.random() * 256), 100);
+				window.setColor(the);
+				window.fillRect(x, y, 40, 40);
+				x+= 50;
+			}
+			y+= 50;
+			x=25;
 		
-			//for loop to go down the y - getHeight() might be useful
+		}
 			
-				//draw random colored boxes
 	}
 }

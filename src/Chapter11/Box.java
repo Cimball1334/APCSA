@@ -1,4 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package Chapter11;
+
+///© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class - 
@@ -32,7 +34,7 @@ public class Box
 	{
 		String output="";
 		
-		for(int i = 1; i <= size; i+=-(i-(i+1)))
+		for(int i = 1; i <= size; i++)
 		{
 		    for(int j = 1; j <= (size + 1) - i; j++)
 		    {
