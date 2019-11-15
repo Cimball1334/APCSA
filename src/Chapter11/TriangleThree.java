@@ -1,46 +1,52 @@
-package Chapter11;
 //© A+ Computer Science  -  www.apluscompsci.com
-
 //Name -
 //Date -
 //Class -
 //Lab  -
 
-public class TriangleThree {
-	private int size;
-	private String letter;
+public class TriangleThree
+{
+   private int size;
+   private String letter;
 
-	public TriangleThree() {
+	public TriangleThree()
+	{
+	    setTriangle("",0);
 	}
 
-	public TriangleThree(int count, String let) {
-		setTriangle(let, count);
+	public TriangleThree(int count, String let)
+	{
+	    setTriangle(let,count);
 	}
 
-	public void setTriangle(String let, int sz) {
-		size = sz;
-		letter = let;
+	public void setTriangle( String let, int sz )
+	{
+	    letter = let;
+	    size = sz;
 	}
 
-	public String getLetter() {
+	public String getLetter() 
+	{
 		return letter;
 	}
 
-	public String toString() {
-		String output = "";
-
-		for (int a = 0; a < size; a++) {
-
-			for (int b = 0; b <= a; b++) {
-				// System.out.print(let);
-				output += this.getLetter();
-			}
-			// System.out.println();
-			output += "\n";
-		}
-
-
-
-		return output + "\n";
+	public String toString()
+	{
+		String output="";
+		
+		for(int i = 1; i <= size; i++)
+		{
+		   for(int j = 1; j <= size - i; j++)
+		   {
+		       output += " ";
+		      }
+		   for(int k = 1; k <= i; k++)
+		   {
+		       output += getLetter();
+		      }
+		      output += "\n";
+		  }
+		
+		return output+"\n";
 	}
 }
