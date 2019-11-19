@@ -1,5 +1,3 @@
-package Chapter12;
-
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -18,26 +16,37 @@ public class LineTotaller
 	}
 
 	public LineTotaller(String s)
-	{		
+	{	
+	    setLine(s);
 	}
 
 	public void setLine(String s)
 	{
+	    line = s;
 	}
 
 	public int getSum()
 	{
 		int total = 0;
+		Scanner chopper = new Scanner(line);
+		
+		while(chopper.hasNextInt())
+		{
+		    total += chopper.nextInt();
+		    
+		  }
+		
 		return total;
 	}
 
 	public String getLine()
 	{
-		return "";
+		return line;
 	}
 
 	public String toString()
 	{
-		return getLine();
+		String output = getLine();
+		return output += "\nsum = " + getSum() + "\n";
 	}
 }
