@@ -50,10 +50,10 @@ number = num;
 	        for(int a = 1; a <=number; a++)
 	        {
 
-	            for(int b = 1; b <= number; b++)
+	            for(int b = a; b <= number; b++)
 	            {
 
-	                for(int c = 1; c <= number; c++)
+	                for(int c = b; c <= number; c++)
 	                {
 	                    if((a * a) + (b * b) == (c * c))
 	                    {
