@@ -14,5 +14,13 @@ public class BoxRunner
 {
 	public static void main( String args[] ) throws IOException
 	{
+		Scanner file = new Scanner( new File("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\Chapter13\\box.dat"));
+		int size = file.nextInt();
+		file.nextLine();
+		
+		for(int i = 0; i <size; i++) {
+			//shoot me please
+		}
+		
 	}
 }

@@ -14,11 +14,18 @@ public class LargeNumRunner
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Scanner file = new Scanner(new File("largenum.dat"));
+		Scanner file = new Scanner(new File("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\Chapter13\\largenum.dat"));
 		int size = file.nextInt();
 		file.nextLine();
+		
 		for(int i=0; i<size; i++)
 		{
+			
+			String line = file.nextLine();
+			LargeNum test = new LargeNum();
+			test.setLine(line);
+			System.out.println(test);
+			
 		}
 	}
 }

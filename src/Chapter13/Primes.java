@@ -11,16 +11,25 @@ public class Primes
 {
 	private int number;
 
-	//constructor methods go here
+	public Primes() {
+		
+	}
+	
+	public Primes(int num) {
+		setPrime(num);
+	}
 	
 
 	public void setPrime(int num)
 	{
-
+number = num;
 	}
 
 	//boolean isPrime()   goes here
-
+	public boolean isPrime() {
+		return false;
+		
+	}
 
 
 

@@ -17,10 +17,10 @@ public class GraphicsRunner extends JFrame
 		super("Graphics Runner");
 		setSize(WIDTH,HEIGHT);
 						
-		//getContentPane().add(new ColoredBoxes());
+		getContentPane().add(new ColoredBoxes());
 		
 						
-		getContentPane().add(new RandomColoredBoxes());
+		//getContentPane().add(new RandomColoredBoxes());
 				
 		setVisible(true);
 	}

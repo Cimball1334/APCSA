@@ -13,6 +13,15 @@ public class Box
    private int size;
 
 	//make two constructors	
+   public Box() {
+	   
+   }
+   
+   public Box(int s) {
+	   
+   }
+   
+
 
 	public String toString()
 	{

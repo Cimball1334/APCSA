@@ -14,13 +14,17 @@ public class OddOrEvenRunner
 {
 	public static void main( String args[] ) throws IOException
 	{
-		Scanner file = new Scanner(new File("oddoreven.dat"));
+		@SuppressWarnings("resource")
+		Scanner file = new Scanner(new File("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\Chapter13\\oddoreven.dat"));
 		int size = file.nextInt();
 		file.nextLine();
 		for(int i = 0; i < size; i++)
 		{
 		   int num = file.nextInt();
-			//instantiate an OddOrEven
+			
+		   OddOrEven test = new OddOrEven();
+		   test.setNum(num);
+		   System.out.println(test);
 		}
 	}
 }
