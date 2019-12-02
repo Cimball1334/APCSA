@@ -1,6 +1,4 @@
-package Chapter13;
-
-///© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Lab  -
@@ -9,36 +7,48 @@ import java.lang.Math;
 
 public class Primes
 {
-	private int number;
+    private int number;
 
-	public Primes() {
-		
-	}
-	
-	public Primes(int num) {
-		setPrime(num);
-	}
-	
+    public Primes()
+    {
+        setPrime(0);
+    }
 
-	public void setPrime(int num)
-	{
-number = num;
-	}
+    public Primes(int num)
+    {
+        setPrime(num);
+    }
 
-	//boolean isPrime()   goes here
-	public boolean isPrime() {
-		return false;
-		
-	}
+    public void setPrime(int num)
+    {
+        number = num;
+    }
+
+    public boolean isPrime()
+    {
+        boolean prime = true;
+        
+        for(int i = 2; i < number; i++)
+        {
+         if(number % i == 0)   
+         {
+             prime = false;
+            }
+        }
+        
+        return prime;
+    }
 
 
 
 
-
-
-	public String toString()
-	{
-		
-		return "";
-	}
+    public String toString()
+    {
+        if(isPrime())
+        {
+            return number + " IS PRIME";
+        }
+        
+        return number + " IS NOT PRIME";
+    }
 }

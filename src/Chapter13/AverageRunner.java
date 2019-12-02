@@ -1,6 +1,4 @@
-package Chapter13;
-
-///© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class - 
@@ -14,5 +12,16 @@ public class AverageRunner
 {
 	public static void main( String args[] ) throws IOException
 	{
+	    Scanner file = new Scanner(new File("average.dat"));
+		int size = file.nextInt();
+		file.nextLine();
+		for(int i=0; i<size; i++)
+		{
+		    String s = file.nextLine();
+		    
+		    Average test = new Average();
+		    test.setLine(s);
+		    System.out.println(test);
+		}
 	}
 }
