@@ -1,4 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package Chapter14;
+
+///© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class - 
@@ -6,7 +8,7 @@
 
 import java.util.Arrays;
 
-public class ArrayFunHouseRunner
+public class ArrayFunHouseTwoRunner
 {
 	public static void main( String args[] )
 	{

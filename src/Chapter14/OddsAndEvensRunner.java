@@ -1,10 +1,12 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package Chapter14;
+
+///© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
 //Lab  - 
 
-public class OddAnEvensRunner
+public class OddsAndEvensRunner
 {
 	public static void main( String args[] )
 	{
