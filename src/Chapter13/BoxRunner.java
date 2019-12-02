@@ -19,7 +19,12 @@ public class BoxRunner
 		file.nextLine();
 		
 		for(int i = 0; i <size; i++) {
-			//shoot me please
+			String line = file.nextLine();
+			
+			Box test = new Box();
+			test.setBox(line);
+			System.out.println(test);
+			
 		}
 		
 	}

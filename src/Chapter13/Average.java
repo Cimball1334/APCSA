@@ -1,3 +1,5 @@
+package Chapter13;
+
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -55,17 +57,7 @@ public class Average
         int number = 0;
         int counter = 0;
         int add =0;
-        //int test = line.lastIndexOf(getLowest() + "");
-       // System.out.println("index of" + test);
-        //if(getLowest() < 10)
-        //{
-             //line = line.substring(0,test) + "" + line.substring(test + 1, line.length());
-       // }else
-        //{
-            //line = line.substring(0,test) + "" + line.substring(test + 2, line.length());
-            //}
-        //line = line.substring(0,test -1) + "" + line.substring(test + 1, line.length());
-       //System.out.println("line is " +line);
+       
        Scanner chopper = new Scanner(line);
        
        
@@ -91,8 +83,7 @@ public class Average
            
            
         }
-        System.out.println("num of nums " + number);
-        System.out.println("sum of nums " + sum);
+
         average = (double)sum / number;
 
         return average;
