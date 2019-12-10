@@ -37,6 +37,7 @@ public class ArrayFunHouseTwoRunner {
 		
 		System.out.println(Arrays.toString(four));
 		System.out.println("first 7 values greater than 9 " + Arrays.toString(ArrayFunHouseTwo.getCountValuesBiggerThanX(four, 7, 9)));
+		System.out.println("first 5 values greater than 15 " + Arrays.toString(ArrayFunHouseTwo.getCountValuesBiggerThanX(four, 5, 15)));
 		
 		
 	}

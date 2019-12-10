@@ -7,6 +7,7 @@ package Chapter14;
 //Lab  - 
 
 import java.lang.System;
+import java.util.Arrays;
 import java.lang.Math;
 
 public class ArrayFunHouseTwo {
@@ -17,7 +18,7 @@ public class ArrayFunHouseTwo {
 	public static boolean goingUp(int[] numArray) {
 		boolean flag = false;
 
-		for (int i = 0; i < numArray.length - 1; i++) {
+		for (int i = 0; i < numArray.length-1; i++) {
 
 			if (numArray[i + 1] > numArray[i]) {
 				flag = true;
@@ -50,31 +51,23 @@ public class ArrayFunHouseTwo {
 	}
 
 	// getValuesBiggerThanX will return an array that contains
-	// count number of values that are larter than parameter x
+	// count number of values that are larger than parameter x
 	// [1,2,3,4,5,6,7,8,9,10,11,6],3,5 would return [6,7,8]
 	public static int[] getCountValuesBiggerThanX(int[] numArray, int count, int x) {
-		
-		int counting = 0;
-		
-		for (int i = 0; i < count; i++) {
 
-			if (numArray[i] > x)
-				counting++;
+		int[] thing = new int[count];
+		int place = 0;
 
-		}
-		int[] tom = new int[counting];
-		counting = 0;
+		for (int i = 0; i < numArray.length; i++) {
 
-		for (int i = 0; i < count; i++) {
-
-			if (numArray[i] > x) {
-
-				tom[counting] = numArray[i];
-				counting++;
+			if (numArray[i] > x && place < count) {
+				thing[place] = numArray[i];
+				place++;
 
 			}
+
 		}
 
-		return tom;
+		return thing;
 	}
 }
