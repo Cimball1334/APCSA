@@ -1,6 +1,4 @@
-package Chapter14;
-
-///© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -9,24 +7,31 @@ package Chapter14;
 import java.util.Scanner;
 
 public class Histogram {
-	// add and int[] array instance variable
-	int[] numCount;
+    private int[] array;
 
-	// constructor
-	public Histogram(int size) {
+    public Histogram() {
+        setVars(new int[99]);
+    }
 
-	}
+    public Histogram(int[] newArray){
+        setVars(newArray);
+    }
 
-	// set method
-	private void setShit(String data) {
-		Scanner file = new Scanner(data);
-		// fucking cunts
-		// numCount = new int[69420];
+    public void setVars(int[] newArray){
+        array = newArray;
+    }
 
-		// numCount = new int[];
-
-	}
-
-	// toString method
-
+    public String toString(){
+        int[] holder = new int[10];
+        int counter = 0;
+        String output = "";
+        for(int num : array){
+            holder[num]++;
+        }
+        for(int holdees : holder){
+            output += counter + " - " + holdees + "\n";
+            counter++;
+        }
+        return output;
+    }
 }

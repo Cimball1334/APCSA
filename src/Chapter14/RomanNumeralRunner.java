@@ -1,6 +1,4 @@
-package Chapter14;
-
-///© A+ Computer Science  -  www.apluscompsci.com
+//© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -45,7 +43,7 @@ public class RomanNumeralRunner
 		test.setRoman("XX");
 		out.println("XX is " + test.getNumber() + "\n");
 
-		test.setRoman("XLIX");
-		out.println("XLIX is " + test.getNumber() + "\n");
+		test.setRoman("XXXVIII");
+		out.println("XXXVIII is " + test.getNumber() + "\n");
 	}
 }
