@@ -8,13 +8,25 @@ package Chapter14;
 
 import java.util.Scanner;
 
-public class Histogram
-{
-	//add and int[] array instance variable
+public class Histogram {
+	// add and int[] array instance variable
+	int[] numCount;
 
-	//constructor
+	// constructor
+	public Histogram(int size) {
 
-	//set method
+	}
 
-	//toString method
+	// set method
+	private void setShit(String data) {
+		Scanner file = new Scanner(data);
+		
+		numCount = new int[];
+	
+	}
+	
+	
+	// toString method
+	
+	
 }

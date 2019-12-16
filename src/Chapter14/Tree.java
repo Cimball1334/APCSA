@@ -38,6 +38,11 @@ public class Tree extends Canvas
 		Polygon tree = new Polygon(treeXPoints,treeYPoints,treeXPoints.length);
 		window.setColor(Color.GREEN);
 		window.fillPolygon(tree);
+		
+		int[] fucker = {100, 100, 200, 200};
+		int[] biggerFuck = {100, 200, 100, 200};
+		Polygon cunt = new Polygon(fucker, biggerFuck, fucker.length);
+		window.fillPolygon(cunt);
 
 
 	}
