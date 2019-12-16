@@ -1,13 +1,10 @@
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date -
-//Class -
-//Lab  - 
+package Chapter14;
+
 
 public class FibonacciRunner {
-    public static void main(String[] args) {
-        Fibonacci tester = new Fibonacci(50);
-        System.out.println(tester.getValueAtIndex(1));
+	public static void main(String[] args) {
+		Fibonacci tester = new Fibonacci(50);
+		System.out.println(tester.getValueAtIndex(1));
 		System.out.println(tester.getValueAtIndex(2));
 		System.out.println(tester.getValueAtIndex(3));
 		System.out.println(tester.getValueAtIndex(4));
@@ -25,5 +22,5 @@ public class FibonacciRunner {
 		System.out.println(tester.getValueAtIndex(1));
 		System.out.println(tester.getValueAtIndex(2));
 		System.out.println(tester.getValueAtIndex(11));
-    }
+	}
 }

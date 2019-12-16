@@ -1,15 +1,9 @@
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date -
-//Class -
-//Lab  - 
+package Chapter14;
 
 import static java.lang.System.*;
 
-public class RomanNumeralRunner
-{
-	public static void main( String args[] )
-	{
+public class RomanNumeralRunner {
+	public static void main(String args[]) {
 		RomanNumeral test = new RomanNumeral(10);
 		out.println("10 is " + test.toString());
 

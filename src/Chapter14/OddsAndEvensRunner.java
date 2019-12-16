@@ -2,11 +2,7 @@ package Chapter14;
 
 import java.util.Arrays;
 
-///© A+ Computer Science  -  www.apluscompsci.com
-//Name -
-//Date -
-//Class -
-//Lab  - 
+
 
 public class OddsAndEvensRunner
 {
