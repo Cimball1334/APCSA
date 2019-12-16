@@ -20,13 +20,13 @@ public class Histogram {
 	// set method
 	private void setShit(String data) {
 		Scanner file = new Scanner(data);
-		
-		numCount = new int[];
-	
+		// fucking cunts
+		// numCount = new int[69420];
+
+		// numCount = new int[];
+
 	}
-	
-	
+
 	// toString method
-	
-	
+
 }
