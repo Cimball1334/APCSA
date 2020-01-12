@@ -1,3 +1,6 @@
+package pixlab.classes;
+//import pixlab.images;
+
 
 import java.awt.*;
 import java.awt.event.*;

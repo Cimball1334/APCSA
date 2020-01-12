@@ -1,3 +1,4 @@
+package pixlab.classes;
 public class IntArrayWorker
 {
   /** two dimensional matrix */
