@@ -1,4 +1,3 @@
-package pixlab.classes;
 import java.awt.*;
 import java.awt.font.*;
 import java.awt.geom.*;
@@ -97,6 +96,59 @@ public class Picture extends SimplePicture
         pixelObj.setBlue(0);
       }
     }
+  }
+  public void keepOnlyBlue(){
+   Pixel[][] pixels = this.getPixels2D();
+       for (Pixel[] rowArray : pixels)
+      {
+       for (Pixel pixelObj : rowArray)
+         {
+           pixelObj.setGreen(0);
+           pixelObj.setRed(0);
+         }
+      }
+  }
+  public void negate(){
+    Pixel[][] pixels = this.getPixels2D();
+       for (Pixel[] rowArray : pixels)
+      {
+       for (Pixel pixelObj : rowArray)
+         {
+           pixelObj.setGreen(pixelObj.getGreen() - 255);
+           pixelObj.setRed(pixelObj.getRed() - 255);
+           pixelObj.setBlue(pixelObj.getBlue()-255);
+         }
+      }
+
+  }
+  public void grayscale(){
+  Pixel[][] pixels = this.getPixels2D();
+       for (Pixel[] rowArray : pixels)
+      {
+       for (Pixel pixelObj : rowArray)
+         {
+         int gray = (int)(pixelObj.getGreen() + pixelObj.getRed() + pixelObj.getBlue())/3;
+           pixelObj.setGreen(gray);
+           pixelObj.setRed(gray);
+           pixelObj.setBlue(gray);
+         }
+      }
+
+  
+  }
+  public void fixUnderwater(){
+      Pixel[][] pixels = this.getPixels2D();
+       for (Pixel[] rowArray : pixels)
+      {
+       for (Pixel pixelObj : rowArray)
+         {
+     
+             pixelObj.setRed(pixelObj.getRed()*3);
+             pixelObj.setGreen((int)(pixelObj.getGreen() * .66) );
+             pixelObj.setBlue((int)(pixelObj.getBlue()-(pixelObj.getBlue()*.10)));
+             }
+      }
+
   }
   
   /** Method that mirrors the picture around a 
@@ -218,18 +270,21 @@ public class Picture extends SimplePicture
     }
   }
   
- 
   
   /* Main method for testing - each class in Java can have a main 
    * method 
    */
   public static void main(String[] args) 
   {
-    Picture beach = new Picture("C:\\Users\\kimba\\OneDrive\\Desktop\\AP CSA Picture Lab\\pixlab\\imagesbeach.jpg");
+    Picture beach = new Picture("water.jpg");
+   // beach.explore();
+   // beach.zeroBlue();
+    //beach.explore();
+    //beach.keepOnlyBlue();
+    //beach.negate();
+    //beach.grayscale();
+    beach.fixUnderwater();
     beach.explore();
-    beach.zeroBlue();
-    beach.explore();
-    
   }
   
 } // this } is the end of class Picture, put all new methods before this
