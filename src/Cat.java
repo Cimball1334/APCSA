@@ -2,6 +2,7 @@
 public class Cat {
 
 	private String name;
+	public int lives;
 	
 	public Cat() {
 		
@@ -11,7 +12,12 @@ public class Cat {
 		setName(name);
 		
 	}
-	
+	public Cat(String name, int lives) {
+		//decleration of name data type : String
+		setName(name);
+		lives = lives;
+		
+	}
 	//getter and setter methods for initilization of static class and unstatic deferables.
 	
 	//*************
