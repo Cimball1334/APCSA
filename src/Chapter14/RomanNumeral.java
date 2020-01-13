@@ -20,16 +20,16 @@ public class RomanNumeral {
 
 	public Integer getNumber() {
 		int counter = 0;
-		String holder = roman;
+		String palce = roman;
 		int sum = 0;
 		for (String letter : LETTERS) {
 
-			if (holder.indexOf(letter) == 0) {
+			if (palce.indexOf(letter) == 0) {
 
-				while (holder.indexOf(letter) != -1) {
+				while (palce.indexOf(letter) != -1) {
 
 					sum += NUMBERS[counter];
-					holder = holder.substring(holder.indexOf(letter) + letter.length());
+					palce = palce.substring(palce.indexOf(letter) + letter.length());
 				}
 			}
 			counter++;

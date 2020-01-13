@@ -5,7 +5,7 @@ public class Fibonacci {
 	private int[] sequence;
 
 	public Fibonacci() {
-		setVars(90);
+	
 	}
 
 	public Fibonacci(int size) {
