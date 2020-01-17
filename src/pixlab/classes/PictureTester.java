@@ -11,7 +11,7 @@ public class PictureTester {
 	/** Method to test zeroBlue */
 	public static void testZeroBlue() {
 		Picture beach = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\beach.jpg");
-		beach.explore();
+	
 		beach.zeroBlue();
 		beach.explore();
 	}
@@ -52,7 +52,13 @@ public class PictureTester {
 		caterpillar.mirrorVertical();
 		caterpillar.explore();
 	}
-
+	public static void testMirrorHorizontal() {
+		Picture caterpillar = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\caterpillar.jpg");
+		caterpillar.explore();
+		caterpillar.mirrorHorizontal();
+		caterpillar.explore();
+	}
+	
 	/** Method to test mirrorTemple */
 	public static void testMirrorTemple() {
 		Picture temple = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\temple.jpg");
@@ -99,6 +105,7 @@ public class PictureTester {
 		testKeepOnlyGreen();
 		testFixUnderwater();
 		testMirrorVertical();
+		testMirrorHorizontal();
 		// testMirrorTemple();
 		// testMirrorArms();
 		// testMirrorGull();
