@@ -11,7 +11,7 @@ public class PictureTester {
 	/** Method to test zeroBlue */
 	public static void testZeroBlue() {
 		Picture beach = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\beach.jpg");
-	
+
 		beach.zeroBlue();
 		beach.explore();
 	}
@@ -22,11 +22,13 @@ public class PictureTester {
 		beach.explore();
 
 	}
+
 	public static void testKeepOnlyRed() {
 		Picture beach = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\beach.jpg");
 		beach.keepOnlyRed();
 		beach.explore();
 	}
+
 	public static void testKeepOnlyGreen() {
 		Picture beach = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\beach.jpg");
 		beach.keepOnlyGreen();
@@ -48,33 +50,36 @@ public class PictureTester {
 	/** Method to test mirrorVertical */
 	public static void testMirrorVertical() {
 		Picture caterpillar = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\caterpillar.jpg");
-		
+
 		caterpillar.mirrorVertical();
 		caterpillar.explore();
 	}
+
 	public static void testMirrorVerticalRightToLeft() {
 		Picture caterpillar = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\caterpillar.jpg");
-		
+
 		caterpillar.mirrorVerticalRightToLeft();
 		caterpillar.explore();
 	}
+
 	public static void testMirrorHorizontal() {
 		Picture caterpillar = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\caterpillar.jpg");
-		
+
 		caterpillar.mirrorHorizontal();
 		caterpillar.explore();
 	}
+
 	public static void testMirrorHorizontalBotToTops() {
 		Picture caterpillar = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\caterpillar.jpg");
-		
+
 		caterpillar.mirrorHorizontalBotToTop();
 		caterpillar.explore();
 	}
-	
+
 	/** Method to test mirrorTemple */
 	public static void testMirrorTemple() {
 		Picture temple = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\temple.jpg");
-		temple.explore();
+
 		temple.mirrorTemple();
 		temple.explore();
 	}
@@ -92,15 +97,19 @@ public class PictureTester {
 		swan.edgeDetection(10);
 		swan.explore();
 	}
-	
+
 	public static void testFixUnderwater() {
 		Picture water = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\water.jpg");
 		water.fixUnderwater();
 		water.explore();
 	}
-	
-	
 
+public static void testMirrorArms() {
+	
+}
+public static void testMirrorGull() {
+	
+}
 	/**
 	 * Main method for testing. Every class can have a main method in Java
 	 */
@@ -108,7 +117,7 @@ public class PictureTester {
 		// uncomment a call here to run a test
 		// and comment out the ones you don't want
 		// to run
-		
+
 		testZeroBlue();
 		testOnlyBlue();
 		testNegate();
@@ -120,9 +129,9 @@ public class PictureTester {
 		testMirrorVerticalRightToLeft();
 		testMirrorHorizontal();
 		testMirrorHorizontalBotToTops();
-		// testMirrorTemple();
-		// testMirrorArms();
-		// testMirrorGull();
+		testMirrorTemple();
+		testMirrorArms();
+		testMirrorGull();
 		// testMirrorDiagonal();
 		// testCollage();
 		// testCopy();
@@ -136,5 +145,4 @@ public class PictureTester {
 		// testGetAverageForColumn(0);
 	}
 
-	
 }
