@@ -64,6 +64,12 @@ public class PictureTester {
 		caterpillar.mirrorHorizontal();
 		caterpillar.explore();
 	}
+	public static void testMirrorHorizontalBotToTops() {
+		Picture caterpillar = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\caterpillar.jpg");
+		
+		caterpillar.mirrorHorizontalBotToTop();
+		caterpillar.explore();
+	}
 	
 	/** Method to test mirrorTemple */
 	public static void testMirrorTemple() {
@@ -113,6 +119,7 @@ public class PictureTester {
 		testMirrorVertical();
 		testMirrorVerticalRightToLeft();
 		testMirrorHorizontal();
+		testMirrorHorizontalBotToTops();
 		// testMirrorTemple();
 		// testMirrorArms();
 		// testMirrorGull();
