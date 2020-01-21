@@ -78,7 +78,7 @@ public class PictureTester {
 
 	/** Method to test mirrorTemple */
 	public static void testMirrorTemple() {
-		Picture temple = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\temple.jpg");
+		Picture temple = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\temple.jpg");
 
 		temple.mirrorTemple();
 		temple.explore();
@@ -86,14 +86,20 @@ public class PictureTester {
 
 	/** Method to test the collage method */
 	public static void testCollage() {
-		Picture canvas = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\640x480.jpg");
+		Picture canvas = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\640x480.jpg");
 		canvas.createCollage();
 		canvas.explore();
 	}
 
 	/** Method to test edgeDetection */
 	public static void testEdgeDetection() {
-		Picture swan = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\swan.jpg");
+		Picture swan = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
+		swan.edgeDetection(10);
+		swan.explore();
+	}
+	
+	public static void testEdgeDetection2() {
+		Picture swan = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
 		swan.edgeDetection(10);
 		swan.explore();
 	}
@@ -105,9 +111,11 @@ public class PictureTester {
 	}
 
 public static void testMirrorArms() {
+	Picture snowman = new Picture ("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\snowman.jpg");
 	
 }
 public static void testMirrorGull() {
+	Picture gull = new Picture ("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\seagull.jpg");
 	
 }
 	/**
@@ -118,25 +126,28 @@ public static void testMirrorGull() {
 		// and comment out the ones you don't want
 		// to run
 
-		testZeroBlue();
-		testOnlyBlue();
-		testNegate();
-		testGrayScale();
-		testKeepOnlyRed();
-		testKeepOnlyGreen();
-		testFixUnderwater();
-		testMirrorVertical();
-		testMirrorVerticalRightToLeft();
-		testMirrorHorizontal();
-		testMirrorHorizontalBotToTops();
+		//working for school picture
+//		testZeroBlue();
+//		testOnlyBlue();
+//		testNegate();
+//		testGrayScale();
+//		testKeepOnlyRed();
+//		testKeepOnlyGreen();
+//		testFixUnderwater();
+//		testMirrorVertical();
+//		testMirrorVerticalRightToLeft();
+//		testMirrorHorizontal();
+//		testMirrorHorizontalBotToTops();
+		
+		//programmed for home files
 		testMirrorTemple();
 		testMirrorArms();
 		testMirrorGull();
 		// testMirrorDiagonal();
-		// testCollage();
+		 testCollage();
 		// testCopy();
-		// testEdgeDetection();
-		// testEdgeDetection2();
+		testEdgeDetection();
+		//testEdgeDetection2();
 		// testChromakey();
 		// testEncodeAndDecode();
 		// testGetCountRedOverValue(250);

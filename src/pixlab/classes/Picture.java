@@ -273,6 +273,13 @@ public class Picture extends SimplePicture
       System.out.println(count);
     }
   }
+  public void mirrorArm() {
+	  
+	  
+  }
+  public void mirrorGull(){
+	  
+  }
   
   /** copy from the passed fromPic to the
     * specified startRow and startCol in the
@@ -308,8 +315,8 @@ public class Picture extends SimplePicture
   /** Method to create a collage of several pictures */
   public void createCollage()
   {
-    Picture flower1 = new Picture("flower1.jpg");
-    Picture flower2 = new Picture("flower2.jpg");
+    Picture flower1 = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\flower1.jpg");
+    Picture flower2 = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\flower2.jpg");
     this.copy(flower1,0,0);
     this.copy(flower2,100,0);
     this.copy(flower1,200,0);
@@ -319,7 +326,7 @@ public class Picture extends SimplePicture
     this.copy(flower1,400,0);
     this.copy(flower2,500,0);
     this.mirrorVertical();
-    this.write("collage.jpg");
+    this.write("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\collage.jpg");
   }
   
   
