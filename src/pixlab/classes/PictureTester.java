@@ -78,7 +78,8 @@ public class PictureTester {
 
 	/** Method to test mirrorTemple */
 	public static void testMirrorTemple() {
-		Picture temple = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\temple.jpg");
+		Picture temple = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\temple.jpg");
 
 		temple.mirrorTemple();
 		temple.explore();
@@ -86,21 +87,24 @@ public class PictureTester {
 
 	/** Method to test the collage method */
 	public static void testCollage() {
-		Picture canvas = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\640x480.jpg");
-		canvas.createCollage();
+		Picture canvas = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\640x480.jpg");
+		canvas.myCollage();
 		canvas.explore();
 	}
 
 	/** Method to test edgeDetection */
 	public static void testEdgeDetection() {
-		Picture swan = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
+		Picture swan = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
 		swan.edgeDetection(10);
 		swan.explore();
 	}
-	
+
 	public static void testEdgeDetection2() {
-		Picture swan = new Picture("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
-		swan.edgeDetection(10);
+		Picture swan = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
+		swan.edgeDetection2(10);
 		swan.explore();
 	}
 
@@ -110,23 +114,34 @@ public class PictureTester {
 		water.explore();
 	}
 
-public static void testMirrorArms() {
-	Picture snowman = new Picture ("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\snowman.jpg");
-	
-}
-public static void testMirrorGull() {
-	Picture gull = new Picture ("A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\seagull.jpg");
-	
-}
-	/**
-	 * Main method for testing. Every class can have a main method in Java
-	 */
-	public static void main(String[] args) {
-		// uncomment a call here to run a test
-		// and comment out the ones you don't want
-		// to run
+	public static void testMirrorArms() {
+		Picture snowman = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\snowman.jpg");
+		snowman.mirrorArm();
+		snowman.explore();
+	}
 
-		//working for school picture
+	public static void testMirrorGull() {
+		Picture gull = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\seagull.jpg");
+		gull.mirrorGull();
+		gull.explore();
+	}
+	public static void testCopy() {
+		Picture gull = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\seagull.jpg");
+		Picture snowman = new Picture(
+				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\snowman.jpg");
+		
+		gull.copy(snowman, 100, 100, 68, 298, 103, 300);
+		gull.explore();
+		
+	}
+
+	public static void main(String[] args) {
+
+		// working for school picture
+		
 //		testZeroBlue();
 //		testOnlyBlue();
 //		testNegate();
@@ -138,16 +153,18 @@ public static void testMirrorGull() {
 //		testMirrorVerticalRightToLeft();
 //		testMirrorHorizontal();
 //		testMirrorHorizontalBotToTops();
-		
-		//programmed for home files
-		testMirrorTemple();
-		testMirrorArms();
-		testMirrorGull();
+
+		// programmed for home files
+
+		// testMirrorTemple();
+		 //testMirrorArms();
+		// testMirrorGull();
 		// testMirrorDiagonal();
-		 testCollage();
-		// testCopy();
+		//testCollage();
+		//testCopy();
 		testEdgeDetection();
-		//testEdgeDetection2();
+		testEdgeDetection2();
+
 		// testChromakey();
 		// testEncodeAndDecode();
 		// testGetCountRedOverValue(250);
