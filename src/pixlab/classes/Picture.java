@@ -251,9 +251,10 @@ public class Picture extends SimplePicture {
 		Pixel rightPixel = null;
 		int count = 0;
 		Pixel[][] pixels = this.getPixels2D();
-
+		Picture snowman = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\snowman.jpg");
+		this.copy(snowman, 185, 99, 153, 185, 99, 169);
 		// loop through the rows
-		for (int row = 156; row < 200; row++) {
+		for (int row = 156; row < 222; row++) {
 			// loop from 13 to just before the mirror point
 			for (int col = 100; col < 169; col++) {
 				count++;
@@ -327,10 +328,8 @@ public class Picture extends SimplePicture {
 
 	/** Method to create a collage of several pictures */
 	public void createCollage() {
-		Picture flower1 = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\flower1.jpg");
-		Picture flower2 = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\flower2.jpg");
+		Picture flower1 = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\flower1.jpg");
+		Picture flower2 = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\flower2.jpg");
 		this.copy(flower1, 0, 0);
 		this.copy(flower2, 100, 0);
 		this.copy(flower1, 200, 0);
@@ -344,12 +343,9 @@ public class Picture extends SimplePicture {
 	}
 
 	public void myCollage() {
-		Picture image1 = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\no.jfif");
-		Picture image2 = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\hippo.png");
-		Picture image3 = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\penguin.png");
+		Picture image1 = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\no.jfif");
+		Picture image2 = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\hippo.png");
+		Picture image3 = new Picture("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\penguin.png");
 		this.copy(image3, 0, 320 - image3.getWidth() / 2);
 
 		this.copy(image1, 0, 0);
@@ -400,15 +396,15 @@ public class Picture extends SimplePicture {
 					leftPixel.setColor(Color.WHITE);
 			}
 		}
-		for (int col = 0; col < pixelsbase[0].length-1; col++) {
-			for (int row = 0; row <pixelsbase.length-1; row++) {
+		for (int col = 0; col < pixelsbase[0].length - 1; col++) {
+			for (int row = 0; row < pixelsbase.length - 1; row++) {
 				leftPixel = pixelsbase[row][col];
-				rightPixel = pixelsbase[row+1][col];
+				rightPixel = pixelsbase[row + 1][col];
 				rightColor = rightPixel.getColor();
-				if (leftPixel.colorDistance(rightColor) > edgeDist/2)
+				if (leftPixel.colorDistance(rightColor) > edgeDist / 2)
 					pixels[row][col].setColor(Color.BLACK);
 				else {
-					//pixels[row][col].setColor(Color.WHITE);
+					// pixels[row][col].setColor(Color.WHITE);
 				}
 			}
 		}

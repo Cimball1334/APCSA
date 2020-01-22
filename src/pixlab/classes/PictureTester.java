@@ -79,7 +79,7 @@ public class PictureTester {
 	/** Method to test mirrorTemple */
 	public static void testMirrorTemple() {
 		Picture temple = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\temple.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\temple.jpg");
 
 		temple.mirrorTemple();
 		temple.explore();
@@ -88,7 +88,7 @@ public class PictureTester {
 	/** Method to test the collage method */
 	public static void testCollage() {
 		Picture canvas = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\640x480.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\640x480.jpg");
 		canvas.myCollage();
 		canvas.explore();
 	}
@@ -96,14 +96,14 @@ public class PictureTester {
 	/** Method to test edgeDetection */
 	public static void testEdgeDetection() {
 		Picture swan = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\swan.jpg");
 		swan.edgeDetection(10);
 		swan.explore();
 	}
 
 	public static void testEdgeDetection2() {
 		Picture swan = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\swan.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\swan.jpg");
 		swan.edgeDetection2(10);
 		swan.explore();
 	}
@@ -116,22 +116,22 @@ public class PictureTester {
 
 	public static void testMirrorArms() {
 		Picture snowman = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\snowman.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\snowman.jpg");
 		snowman.mirrorArm();
 		snowman.explore();
 	}
 
 	public static void testMirrorGull() {
 		Picture gull = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\seagull.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\seagull.jpg");
 		gull.mirrorGull();
 		gull.explore();
 	}
 	public static void testCopy() {
 		Picture gull = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\seagull.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\seagull.jpg");
 		Picture snowman = new Picture(
-				"A:\\Apps\\Programming\\Eclipse\\GitRepositories\\APCSA\\APCSA\\src\\pixlab\\images\\snowman.jpg");
+				"C:\\Users\\kimballcraigj\\git\\APCSA\\src\\pixlab\\images\\snowman.jpg");
 		
 		gull.copy(snowman, 100, 100, 68, 298, 103, 300);
 		gull.explore();
@@ -157,13 +157,13 @@ public class PictureTester {
 		// programmed for home files
 
 		// testMirrorTemple();
-		 //testMirrorArms();
+		 testMirrorArms();
 		// testMirrorGull();
 		// testMirrorDiagonal();
 		//testCollage();
 		//testCopy();
-		testEdgeDetection();
-		testEdgeDetection2();
+		//testEdgeDetection();
+		//testEdgeDetection2();
 
 		// testChromakey();
 		// testEncodeAndDecode();
