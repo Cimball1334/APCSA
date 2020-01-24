@@ -13,7 +13,9 @@ public class MadLibRunner
 	public static void main( String args[] )
 	{
 		//make a new MadLib
+		MadLib ml = new MadLib("story.dat");
 		
+		System.out.println(ml);
 		out.println("\n");
 	}
 }

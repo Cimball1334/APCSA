@@ -22,15 +22,10 @@ public class ArrayListFunHouse
 			
 			if(number % i == 0) {
 				al.add(i);
-			}
-			
+			}		
 		}
-		
-		
-		
 		return al;
 	}
-	
 	public static List<Integer> keepOnlyCompositeNumbers( List<Integer> nums )
 	{
 		ArrayList<Integer> als = new ArrayList<Integer>();
