@@ -1,4 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package Chapter16;
+
+///© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -29,7 +31,7 @@ public class ArrayListFunHouseRunner
 		List<Integer> list = new ArrayList<Integer>( Arrays.asList(nums) );
 		
 		System.out.println( list );
-		ArrayListFunHouse.keepOnlyCompositeNumbers( list );
+		list = ArrayListFunHouse.keepOnlyCompositeNumbers( list );
 		System.out.println( list );
 	}
 }
