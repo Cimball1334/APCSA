@@ -1,5 +1,3 @@
-package Chapter16;
-
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -13,9 +11,8 @@ public class MadLibRunner
 	public static void main( String args[] )
 	{
 		//make a new MadLib
-		MadLib ml = new MadLib("story.dat");
-		
-		System.out.println(ml);
+		MadLib test = new MadLib();
+		System.out.println(test);
 		out.println("\n");
 	}
 }
