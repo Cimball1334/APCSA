@@ -16,7 +16,6 @@ public class ExpressionSolver {
 	// add in instance variables
 	private static String ex = new String();
 	private static ArrayList<String> al = null;
-	
 
 	public ExpressionSolver(String s) {
 		setExpression(s);
@@ -30,102 +29,101 @@ public class ExpressionSolver {
 	}
 
 	public void solveExpression() {
-		while (ex.indexOf("*") > -1 || ex.indexOf("/") > -1) {
-			if (ex.indexOf("/") == -1) {
+		while (al.indexOf("*") > -1 || al.indexOf("/") > -1) {
+			if (al.indexOf("/") == -1) {
 				int loc = al.indexOf("*");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1*o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 * o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();		
-				
-			} else if (ex.indexOf("*") == -1) {
-				
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
+
+			} else if (al.indexOf("*") == -1) {
+
 				int loc = al.indexOf("/");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1/o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 / o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();		
-				
-			} else if (ex.indexOf("*") < ex.indexOf("/")) {
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
+
+			} else if (al.indexOf("*") < al.indexOf("/")) {
 				int loc = al.indexOf("*");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1*o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 * o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();		
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
 			} else {
-				
+
 				int loc = al.indexOf("/");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1/o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 / o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();	
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
 			}
 
 		}
-		
-		while (ex.indexOf("+") > -1 || ex.indexOf("-") > -1) {
-			
-			if (ex.indexOf("-") == -1) {
-				
+
+		while (al.indexOf("+") > -1 || al.indexOf("-") > -1) {
+
+			if (al.indexOf("-") == -1) {
+
 				int loc = al.indexOf("+");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1+o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 + o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();				
-			} else if (ex.indexOf("+") == -1) {
-				
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
+			} else if (al.indexOf("+") == -1) {
+
 				int loc = al.indexOf("-");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1-o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 - o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();		
-			
-			} else if (ex.indexOf("+") < ex.indexOf("-")) {
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
+
+			} else if (al.indexOf("+") < al.indexOf("-")) {
 				int loc = al.indexOf("+");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1+o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 + o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();		
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
 
 			} else {
 				int loc = al.indexOf("-");
-				int o1 = Integer.parseInt(al.get(loc-1));
-				int o2 = Integer.parseInt(al.get(loc+1));
-				int res = o1-o2;
+				int o1 = Integer.parseInt(al.get(loc - 1));
+				int o2 = Integer.parseInt(al.get(loc + 1));
+				int res = o1 - o2;
 				String sRes = Integer.toString(res);
-				al.set(loc+1, sRes );
-				al.remove(loc-1);
-				al.remove(loc-1);
-				ex = al.toString();		
-	
+				al.set(loc + 1, sRes);
+				al.remove(loc - 1);
+				al.remove(loc - 1);
+				ex = al.toString();
 
 			}
 

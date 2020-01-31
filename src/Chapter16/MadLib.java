@@ -48,7 +48,7 @@ public class MadLib
     public void loadNouns()
     {
         try{
-            Scanner file = new Scanner(new File("nouns.dat"));
+            Scanner file = new Scanner(new File("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\Chapter16\\nouns.dat"));
             nouns = new ArrayList<String>();
 
             while(file.hasNextLine())
@@ -66,7 +66,7 @@ public class MadLib
     public void loadVerbs()
     {
         try{
-            Scanner file = new Scanner(new File("verbs.dat"));
+            Scanner file = new Scanner(new File("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\Chapter16\\verbs.dat"));
             verbs = new ArrayList<String>();
 
             while(file.hasNextLine())
@@ -83,7 +83,7 @@ public class MadLib
     public void loadAdjectives()
     {
         try{
-            Scanner file = new Scanner(new File("adjectives.dat"));
+            Scanner file = new Scanner(new File("C:\\Users\\kimballcraigj\\git\\APCSA\\src\\Chapter16\\adjectives.dat"));
             adjectives = new ArrayList<String>();
 
             while(file.hasNextLine())
