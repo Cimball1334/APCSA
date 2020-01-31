@@ -19,8 +19,8 @@ public class ExpressionSolverRunner {
 
 		test.setExpression("3 * 5");
 		System.out.println(test);
-		test.setExpression("3 - 5");
-		System.out.println(test);
+//		test.setExpression("3 - 5");
+//		System.out.println(test);
 //		test.setExpression("3 / 5");
 //		System.out.println(test);
 //		test.setExpression("5 / 5 * 2 + 8 / 2 + 5");
