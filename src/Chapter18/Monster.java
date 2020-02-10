@@ -16,4 +16,38 @@ import static java.util.Collections.*;
 public class Monster
 {
 	//add stuff like instance variables, constructors, and methods.
+	private static int age;
+	private static int hight;
+	private static int weight;
+	
+	public Monster(int a, int h, int w) {
+		setAge(a);
+		setHight(h);
+		setWeight(w);
+	}
+
+	public static int getAge() {
+		return age;
+	}
+
+	public static void setAge(int age) {
+		Monster.age = age;
+	}
+
+	public static int getHight() {
+		return hight;
+	}
+
+	public static void setHight(int hight) {
+		Monster.hight = hight;
+	}
+
+	public static int getWeight() {
+		return weight;
+	}
+
+	public static void setWeight(int weight) {
+		Monster.weight = weight;
+	}
+	
 }

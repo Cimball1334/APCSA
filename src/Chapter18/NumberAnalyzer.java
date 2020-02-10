@@ -21,13 +21,18 @@ public class NumberAnalyzer
 
 	public NumberAnalyzer(String numbers)
 	{
-
+		String[] nums = numbers.split(" ");
+			for(String s : nums) {
+				Number num = new Number(Integer.parseInt(s));
+				list.add(num);
+			}
+			
 	}
 	
-	public void setList(String numbers)
+	public void setList(String[] numbers)
 	{
 
-
+		
 	
 	}
 
@@ -60,6 +65,6 @@ public class NumberAnalyzer
 	
 	public String toString( )
 	{
-		return "";
+		return "" + list.toString();
 	}
 }

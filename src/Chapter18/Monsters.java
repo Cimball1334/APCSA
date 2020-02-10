@@ -19,30 +19,57 @@ public class Monsters
 
 	public Monsters(int size)
 	{
+		myMonsters = new Monster[size];
 	}
 
-	public void add(int spot, Monster m)
+	public  void add(int spot, Monster m)
 	{
 		//put m in the Monster array at [spot]
+		myMonsters[spot] = m;
+		
 	}
 
 	public Monster getOldest( )
 	{
-		return null;
+		int oldest = 0;
+		Monster name = null;
+		for(Monster d: myMonsters) {
+		 if(d.getAge() > oldest) {
+			 oldest = d.getAge();
+			 name = d;
+		 }
+		}
+		return name;
 	}
 
 	public Monster getTallest( )
 	{
-		return null;
+		int oldest = 0;
+		Monster name = null;
+		for(Monster d: myMonsters) {
+		 if(d.getHight() > oldest) {
+			 oldest = d.getHight();
+			 name = d;
+		 }
+		}
+		return name;
 	}
    
    public Monster getSlimmest( )
 	{
-		return null;
+	   int oldest = myMonsters[0].getWeight();
+		Monster name = myMonsters[0];
+		for(Monster d: myMonsters) {
+		 if(d.getWeight() < oldest) {
+			 oldest = d.getWeight();
+			 name = d;
+		 }
+		}
+		return name;
 	}
 
 	public String toString()
 	{
-		return "";
+		return "" + Arrays.toString(myMonsters);
 	}
 }
