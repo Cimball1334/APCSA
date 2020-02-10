@@ -13,7 +13,7 @@ import static java.lang.System.*;
 
 public class NumberAnalyzer
 {
-	private ArrayList<Number> list;
+	private Number[] list;
 
 	public NumberAnalyzer()
 	{
@@ -24,7 +24,7 @@ public class NumberAnalyzer
 	{
 		String[] nums = numbers.split(" ");
 		setList(nums);
-			
+		list = new Number[nums.length];
 	}
 	
 	
@@ -34,7 +34,10 @@ public class NumberAnalyzer
 		String[] nums = numbers;
 		for(String s : nums) {
 			
-			Number n = new Number(Integer.parseInt(s));
+			
+			Number n = new Number(3);
+			
+
 			
 		}
 		
