@@ -50,4 +50,9 @@ public class Monster
 		Monster.weight = weight;
 	}
 	
+	public String toString()
+    {
+    	return "" + age + " " + hight + " " + weight;
+    }
+	
 }

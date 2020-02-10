@@ -7,6 +7,7 @@ package Chapter18;
 //Lab  -
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 import static java.lang.System.*;
 
@@ -22,10 +23,7 @@ public class NumberAnalyzer
 	public NumberAnalyzer(String numbers)
 	{
 		String[] nums = numbers.split(" ");
-			for(String s : nums) {
-				Number num = new Number(Integer.parseInt(s));
-				list.add(num);
-			}
+		setList(nums);
 			
 	}
 	
@@ -33,7 +31,12 @@ public class NumberAnalyzer
 	
 	public void setList(String[] numbers)
 	{
-
+		String[] nums = numbers;
+		for(String s : nums) {
+			
+			Number n = new Number(Integer.parseInt(s));
+			
+		}
 		
 	
 	}
