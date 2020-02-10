@@ -29,6 +29,8 @@ public class NumberAnalyzer
 			
 	}
 	
+	
+	
 	public void setList(String[] numbers)
 	{
 
