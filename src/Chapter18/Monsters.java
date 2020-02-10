@@ -34,8 +34,8 @@ public class Monsters
 		int oldest = 0;
 		Monster name = null;
 		for(Monster d: myMonsters) {
-		 if(d.getAge() > oldest) {
-			 oldest = d.getAge();
+		 if(Monster.getAge() > oldest) {
+			 oldest = Monster.getAge();
 			 name = d;
 		 }
 		}
@@ -47,8 +47,8 @@ public class Monsters
 		int oldest = 0;
 		Monster name = null;
 		for(Monster d: myMonsters) {
-		 if(d.getHight() > oldest) {
-			 oldest = d.getHight();
+		 if(Monster.getHight() > oldest) {
+			 oldest = Monster.getHight();
 			 name = d;
 		 }
 		}
@@ -57,11 +57,11 @@ public class Monsters
    
    public Monster getSlimmest( )
 	{
-	   int oldest = myMonsters[0].getWeight();
+	   int oldest = Monster.getWeight();
 		Monster name = myMonsters[0];
 		for(Monster d: myMonsters) {
-		 if(d.getWeight() < oldest) {
-			 oldest = d.getWeight();
+		 if(Monster.getWeight() < oldest) {
+			 oldest = Monster.getWeight();
 			 name = d;
 		 }
 		}
