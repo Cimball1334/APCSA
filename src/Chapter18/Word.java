@@ -8,44 +8,40 @@ package Chapter18;
 
 import static java.lang.System.*;
 
-public class Word
-{
-	private String word;
-   private static String vowels = "AEIOUaeiou";   //only one
+public class Word {
+	private static String word;
+	private static String vowels = "AEIOUaeiou"; // only one
 
-	public Word()
-	{
+	public Word() {
 
 	}
 
-	public Word(String wrd)
-	{
-
+	public Word(String wrd) {
+		setWord(wrd);
 	}
 
-	public void setWord(String wrd)
-	{
-
+	public void setWord(String wrd) {
+		word = wrd;
 	}
-	
-	public int getNumVowels()
-	{
-		int count=0;
 
+	public int getNumVowels() {
+		int count = 0;
 
-
-
-
+		for (int i = 0; i < word.length(); i++) {
+			String c = word.substring(i,i+1);
+		
+			if (vowels.contains((String) c)) {
+				count ++;
+			}
+		}
 		return count;
 	}
-	
-	public int getLength()
-	{
-		return 0;
+
+	public int getLength() {
+		return word.length();
 	}
 
-	public String toString()
-	{
-	   return "";
+	public String toString() {
+		return "" + word;
 	}
 }

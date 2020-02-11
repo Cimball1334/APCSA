@@ -8,12 +8,15 @@ package Chapter18;
 
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import static java.lang.System.*;
 
+import java.lang.reflect.Array;
+
 public class Words
 {
-	private ArrayList<Word> words;
+	private Word[] words = new Word[0];
 
 	public Words()
 	{
@@ -22,22 +25,38 @@ public class Words
 
 	public Words(String wordList)
 	{
-
+		setWords(wordList);
 	}
 
 	public void setWords(String wordList)
 	{
-
-
-
-
-
+		String[] wordLs = wordList.split(" ");
+		words = new Word[wordLs.length];
+		
+		int loc = 0;
+		for(String s : wordLs) {
+			
+			Word wd = new Word(s);
+			
+			Array.set(words, loc, wd);
+			System.out.println(Arrays.toString(words));
+			loc++;
+		}
+		
 	}
 	
 	public int countWordsWithXChars(int size)
 	{
 		int count=0;
-
+		
+		for(Word w : words) {
+			
+			if(w.getNumVowels() == size) {
+				count++;
+			}
+				
+			
+		}
 
 
 
@@ -71,6 +90,6 @@ public class Words
 	
 	public String toString()
 	{
-	   return "";
+	   return "" ;
 	}
 }
