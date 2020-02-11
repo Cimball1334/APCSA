@@ -13,6 +13,8 @@ import static java.lang.Math.*;
 import static java.util.Arrays.*;
 import static java.util.Collections.*;
 
+import java.lang.reflect.Array;
+
 public class Monsters
 {
 	private Monster[] myMonsters;
@@ -20,13 +22,15 @@ public class Monsters
 	public Monsters(int size)
 	{
 		myMonsters = new Monster[size];
+		System.out.println(myMonsters.length);
 	}
 
 	public  void add(int spot, Monster m)
 	{
 		//put m in the Monster array at [spot]
-		myMonsters[spot] = m;
-		
+		Array.set(myMonsters, spot, m);
+//		myMonsters[spot] = m;
+		System.out.println(Arrays.toString(myMonsters));
 	}
 
 	public Monster getOldest( )

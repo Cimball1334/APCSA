@@ -20,10 +20,11 @@ public class MonsterLabRunner
 		out.print("How many monsters are in the herd? :: ");
 		int size = keyboard.nextInt();
 		Monsters herd = new Monsters(size);
+		
 
 		for(int i=0; i<size;i++)
 		{
-			//read in monster values 
+
 		
 			//ask for age
 			System.out.print("Enter the age :: ");
@@ -37,6 +38,7 @@ public class MonsterLabRunner
 			int weight = keyboard.nextInt();
 			//instantiate a new Monster() and add it to the herd	
 			Monster peter = new Monster(age, height, weight);
+			System.out.println(peter);
 			herd.add(i, peter);
 			
 		}		
