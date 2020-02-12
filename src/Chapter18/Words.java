@@ -14,82 +14,80 @@ import static java.lang.System.*;
 
 import java.lang.reflect.Array;
 
-public class Words
-{
-	private Word[] words = new Word[0];
+public class Words {
+	private ArrayList<Word> words = new ArrayList(0);
 
-	public Words()
-	{
+	public Words() {
 		setWords("");
 	}
 
-	public Words(String wordList)
-	{
+	public Words(String wordList) {
 		setWords(wordList);
 	}
 
-	public void setWords(String wordList)
-	{
+	public void setWords(String wordList) {
 		String[] wordLs = wordList.split(" ");
-		words = new Word[wordLs.length];
-		
+		words = new ArrayList(wordLs.length);
+
 		int loc = 0;
-		for(String s : wordLs) {
-			
+		for (String s : wordLs) {
+
 			Word wd = new Word(s);
-			
-			Array.set(words, loc, wd);
-			System.out.println(Arrays.toString(words));
+
+			words.add(wd);
+//			Array.set(words, loc, wd);
+			System.out.println(words);
+
 			loc++;
 		}
-		
+
 	}
-	
-	public int countWordsWithXChars(int size)
-	{
-		int count=0;
-		
-		for(Word w : words) {
-			
-			if(w.getNumVowels() == size) {
+
+	public int countWordsWithXChars(int size) {
+		int count = 0;
+
+		for (Word w : words) {
+
+			if (w.getLength() == size) {
 				count++;
 			}
-				
-			
+
 		}
 
+		return count;
+	}
 
+	// this method will remove all words with a specified size / length
+	// this method will also return the sum of the vowels in all words removed
+	public int removeWordsWithXChars(int size) {
+int count = 0;
+		for (Word w : words) {
 
+			if (w.getLength() == size) {
+				words.remove(w);
+				count ++;
+			}
+
+		}
 
 		return count;
 	}
-	
-	//this method will remove all words with a specified size / length
-	//this method will also return the sum of the vowels in all words removed
-	public int removeWordsWithXChars(int size)
-	{
 
+	public int countWordsWithXVowels(int numVowels) {
+		int count = 0;
 
+		for (Word w : words) {
 
+			if (w.getNumVowels() == numVowels) {
+				count++;
+			}
 
-
-		return 0;
-	}
-
-	public int countWordsWithXVowels(int numVowels)
-	{
-		int count=0;
-
-
-
-
-
+		}
 
 		return count;
 	}
-	
-	public String toString()
-	{
-	   return "" ;
+
+	public String toString() {
+		return "" + words;
 	}
 }
