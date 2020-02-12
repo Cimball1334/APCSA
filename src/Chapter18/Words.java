@@ -27,19 +27,22 @@ public class Words {
 
 	public void setWords(String wordList) {
 		String[] wordLs = wordList.split(" ");
+		
 		words = new ArrayList(wordLs.length);
 
 		int loc = 0;
 		for (String s : wordLs) {
 
 			Word wd = new Word(s);
-
+			System.out.println(s);
 			words.add(wd);
 //			Array.set(words, loc, wd);
 			System.out.println(words);
 
 			loc++;
 		}
+	
+		
 
 	}
 
