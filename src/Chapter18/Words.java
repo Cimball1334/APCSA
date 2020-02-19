@@ -27,7 +27,7 @@ public class Words {
 
 	public void setWords(String wordList) {
 		String[] wordLs = wordList.split(" ");
-		
+
 		words = new ArrayList(wordLs.length);
 
 		int loc = 0;
@@ -41,8 +41,6 @@ public class Words {
 
 			loc++;
 		}
-	
-		
 
 	}
 
@@ -63,16 +61,21 @@ public class Words {
 	// this method will remove all words with a specified size / length
 	// this method will also return the sum of the vowels in all words removed
 	public int removeWordsWithXChars(int size) {
-int count = 0;
+		ArrayList<Word> newWords = new ArrayList(0);
+
+		int count = 0;
 		for (Word w : words) {
 
 			if (w.getLength() == size) {
-				words.remove(w);
-				count ++;
+				
+				//System.out.println(words);
+				count += w.getLength();
+			} else {
+				newWords.add(w);
 			}
 
 		}
-
+		words = newWords;
 		return count;
 	}
 

@@ -9,8 +9,8 @@ package Chapter18;
 import static java.lang.System.*;
 
 public class Word {
-	private static String word;
-	private static String vowels = "AEIOUaeiou"; // only one
+	private  String word;
+	private  String vowels = "AEIOUaeiou"; // only one
 
 	public Word() {
 
@@ -31,6 +31,7 @@ public class Word {
 			String c = word.substring(i,i+1);
 		
 			if (vowels.contains((String) c)) {
+				
 				count ++;
 			}
 		}
