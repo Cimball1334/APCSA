@@ -1,3 +1,5 @@
+package Chapter19;
+
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name - 
 //Date -
@@ -6,7 +8,7 @@
 
 import static java.lang.System.*;
 
-public class Monster implements Comparable
+public class Monster2 implements Comparable
 {
 	private int myWeight;
 	private int myHeight;
@@ -40,7 +42,7 @@ public class Monster implements Comparable
 	//creates a new copy of this Object
 	public Object clone()
 	{
-	   return new Monster();
+	   return new Monster2();
 	}
 
 	public boolean equals( Object obj )
@@ -52,7 +54,7 @@ public class Monster implements Comparable
 
 	public int compareTo( Object obj )
 	{
-		Monster rhs = (Monster)obj;
+		Monster2 rhs = (Monster2)obj;
 
 
 
