@@ -10,7 +10,6 @@ public class PetalTimer {
 	Scanner file = new Scanner(new File("PetalData.dat"));
 	int a = file.nextInt();
 	int b = file.nextInt();
-	
 	System.out.println("The beast has " + a*b + " days to find true love!");
 	
 	}
