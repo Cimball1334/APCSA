@@ -1,4 +1,3 @@
-package Chapter19;
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -7,44 +6,41 @@ package Chapter19;
 
 import static java.lang.System.*;
 
-public class Monster1
+public class Monster
 {
 	private String name;
 	private int howBig;	
 
-	public Monster1()
+	public Monster()
 	{
-		
 	}
 
-	public Monster1(String n, int size)
+	public Monster(String n, int size)
 	{
-		name = n;
-		howBig = size;
 	}
 
 	public String getName()
 	{
-		return name;
+		return "";
 	}
 	
 	public int getHowBig()
 	{
-		return howBig;
+		return 0;
 	}
 	
-	public boolean isBigger(Monster1 other)
+	public boolean isBigger(Monster other)
 	{
 		return false;
 	}
 	
-	public boolean isSmaller(Monster1 other)
+	public boolean isSmaller(Monster other)
 	{
 		//call isBigger() use !
 		return false;
 	}
 
-	public boolean namesTheSame(Monster1 other)
+	public boolean namesTheSame(Monster other)
 	{
 		return false;
 	}
