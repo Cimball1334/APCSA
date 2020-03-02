@@ -1,4 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package Chapter20.set1_matrices;
+
+///© A+ Computer Science  -  www.apluscompsci.com
 //Name - 
 //Date -
 //Class -
@@ -6,15 +8,15 @@
 
 import static java.lang.System.*;
 
-public class SpiralMatrix
+public class SprialMatrix
 {
 	//define a matrix
 
-	public SpiralMatrix()
+	public SprialMatrix()
 	{
 	}
 
-	public SpiralMatrix(int size)
+	public SprialMatrix(int size)
 	{
 	}
 	
