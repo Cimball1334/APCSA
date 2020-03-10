@@ -1,6 +1,3 @@
-package Chapter19.Lab6;
-
-
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -21,6 +18,7 @@ public class RationalRunner
 
 		out.println("test.equals(newOne) = "+test.equals(newOne));
 
+		
 		newOne = (Rational)test.clone();
 		out.println("\n\nnewOne after test.clone() = "+newOne);
 		out.println("test.equals(newOne) = "+test.equals(newOne));
