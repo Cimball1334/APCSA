@@ -12,6 +12,7 @@ public class RationalRunner
 {
 	public static void main( String args[] )
 	{
+		
 		Rational test = new Rational();
 		out.println("test = " + test);
 

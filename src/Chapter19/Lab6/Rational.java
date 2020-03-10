@@ -1,103 +1,121 @@
 package Chapter19.Lab6;
 //© A+ Computer Science  -  www.apluscompsci.com
+
 //Name -
 //Date -
 //Class -
 //Lab  -
 
-import static java.lang.System.*; 
+import static java.lang.System.*;
 
-class Rational implements Comparable<Rational>
-{
-    //add two instance variables
-    private int numerator;
-    private int denominator;
-    //write two constructors
-    public Rational()
-    {
-        setRational(1,1);
-    }
+class Rational implements Comparable<Rational> {
+	// add two instance variables
+	private int numerator;
+	private int denominator;
 
-    public Rational(int n, int d)
-    {
-        setRational(n,d);
-    }
+	// write two constructors
+	public Rational() {
+		setRational(1, 1);
+	}
 
-    //write a setRational method
-    public void setRational(int n, int d)
-    {
-        setNumerator(n);
-        setDenominator(d);
-    }
+	public Rational(int n, int d) {
+		setRational(n, d);
+	}
 
-    //write  a set method for numerator and denominator
-    public void setNumerator(int n)
-    {
-        numerator = n;   
-    }
+	// write a setRational method
+	public void setRational(int n, int d) {
+		setNumerator(n);
+		setDenominator(d);
+	}
 
-    public void setDenominator(int d)
-    {
-        denominator = d;
-    }
+	// write a set method for numerator and denominator
+	public void setNumerator(int n) {
+		numerator = n;
+	}
 
-    public void add(Rational  other)
-    {
-        
-        numerator = (numerator * other.getDenominator()) + (other.getNumerator() * denominator);
-        denominator = denominator * other.getDenominator();
-        reduce();
-    }
+	public void setDenominator(int d) {
+		denominator = d;
+	}
 
-    private void reduce()
-    {
+	public void add(Rational other) {
 
+		numerator = (numerator * other.getDenominator()) + (other.getNumerator() * denominator);
+		denominator = denominator * other.getDenominator();
+		reduce();
+	}
 
-    	
-    }
+	private void reduce() {
+//System.out.println("Num and den: " + numerator + " " + denominator );
+		int gcd = gcd(numerator, denominator);
+		int num = numerator / gcd;
+		int den = denominator / gcd;
+		
+		numerator = num;
+		denominator = den;
+	}
 
-    private int gcd(int numOne, int numTwo)
-    {
+	private int gcd(int numOne, int numTwo) {
+		int gcd = 1;
+		if (numOne < numTwo) {
 
-        return 1;
-    }
+			for (int i = 1; i <=  numOne; i++) {
 
-    public Object clone ()
-    {
-        Rational dog = new Rational();
-        return dog;
-    }
+				if (numOne % i == 0 && numTwo % i == 0) {
+					gcd = i;
+				}
 
-    //ACCESSORS
-    //write get methods for numerator and denominator
-    public int getNumerator()
-    {
-        return numerator;
-    }
-    
-    public int getDenominator()
-    {
-        return denominator;
-    }
-    
-    public boolean equals( Object obj)
-    {
-        Rational eq = (Rational) obj;
-        if(numerator == eq.getNumerator() && denominator == eq.getDenominator())
-        return true;
-        return false;
-    }
+			}
 
-    public int compareTo(Rational other)
-    {
-        Rational co = (Rational) other;
-        return -1;
-    }
+		} else {
 
+			for (int i = 1; i <= numTwo; i++) {
 
-    //write  toString() method
-    public String toString()
-    {
-        return numerator + " / " + denominator;
-    }
+				if (numOne % i == 0 && numTwo % i == 0) {
+					gcd = i;
+				}
+
+			}
+
+		}
+		return gcd;
+	}
+
+	public Object clone() {
+		Rational dog = new Rational();
+		return dog;
+	}
+
+	// ACCESSORS
+	// write get methods for numerator and denominator
+	public int getNumerator() {
+		return numerator;
+	}
+
+	public int getDenominator() {
+		return denominator;
+	}
+
+	public boolean equals(Object obj) {
+		Rational other = (Rational) obj;
+		double co = (double)other.getNumerator()/other.getDenominator();
+		double local = (double)getNumerator()/getDenominator();
+		if(local == co)
+			return true;
+		return false;
+		
+	}
+
+	public int compareTo(Rational other) {
+		double co = (double)other.getNumerator()/other.getDenominator();
+		double local = (double)getNumerator()/getDenominator();
+		if(local>co)
+			return 1;
+		
+		return -1;
+	}
+
+	// write toString() method
+	public String toString() {
+		return numerator + " / " + denominator;
+	}
 }
