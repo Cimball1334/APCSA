@@ -1,3 +1,4 @@
+package Chapter19.Lab6;
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -42,12 +43,9 @@ class Rational implements Comparable<Rational>
 
     public void add(Rational  other)
     {
-        //num1/den1 + num2/den2 
-        //new numerator = (num1 * den2 + num2 * den1)
-        //new denominator = (den1 * den2)
+        
         numerator = (numerator * other.getDenominator()) + (other.getNumerator() * denominator);
         denominator = denominator * other.getDenominator();
-        //System.out.println(numerator + " " + denominator);
         reduce();
     }
 
@@ -55,6 +53,7 @@ class Rational implements Comparable<Rational>
     {
 
 
+    	
     }
 
     private int gcd(int numOne, int numTwo)

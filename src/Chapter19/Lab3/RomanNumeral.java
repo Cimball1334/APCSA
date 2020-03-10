@@ -1,3 +1,5 @@
+package Chapter19.Lab3;
+
 //© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
@@ -41,11 +43,17 @@ public class RomanNumeral implements Comparable<RomanNumeral>
     }
 
     //write get methods for number and roman
-    public int getNumber()
+    @SuppressWarnings("unlikely-arg-type")
+	public int getNumber()
     {
-
+    	//roman is a string
+    	  int num = 0;
         
-        return 0;
+    	  
+    	  
+    	  
+          return num; 
+       
     }
 
     public String getRoman()
@@ -63,7 +71,7 @@ public class RomanNumeral implements Comparable<RomanNumeral>
 
     public int compareTo(RomanNumeral r)
     {
-
+    	
         return 0;
     }
 

@@ -12,10 +12,10 @@ public class MonsterRunner
 {
    public static void main( String args[] )
    {
-		Monster zero = new Monster();
-		Monster one = new Monster(8);
-		Monster sue = new Monster(9, 4);
-		Monster harry = new Monster(1, 2, 3);
+		Monsters zero = new Monsters();
+		Monsters one = new Monsters(8);
+		Monsters sue = new Monsters(9, 4);
+		Monsters harry = new Monsters(1, 2, 3);
 		out.println("\nzero Monster :: " + zero);		
 		out.println("\none Monster :: " + one);
 		out.println("\nsue Monster :: " + sue);
@@ -28,11 +28,11 @@ public class MonsterRunner
 		out.println("\nharry Monster :: " + harry);
 
 		out.println("\ncloning harry");	
-		sue = (Monster)harry.clone();
+		sue = (Monsters)harry.clone();
 		out.println("\nsue Monster :: " + sue);
 
-		Monster mOne = new Monster(33,33,11);
-		Monster mTwo = new Monster(55,33,11);
+		Monsters mOne = new Monsters(33,33,11);
+		Monsters mTwo = new Monsters(55,33,11);
 
 		out.println("\nMonster 1 :: " + mOne);
 		out.println("\nMonster 2 :: " + mTwo);

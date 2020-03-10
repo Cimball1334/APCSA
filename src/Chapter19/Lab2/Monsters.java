@@ -8,7 +8,7 @@ package Chapter19.Lab2;
 
 import static java.lang.System.*;
 
-public class Monster implements Comparable
+public class Monsters implements Comparable
 {
 	private int myWeight;
 	private int myHeight;
@@ -42,7 +42,7 @@ public class Monster implements Comparable
 	//creates a new copy of this Object
 	public Object clone()
 	{
-	   return new Monster();
+	   return new Monsters();
 	}
 
 	public boolean equals( Object obj )
@@ -54,7 +54,7 @@ public class Monster implements Comparable
 
 	public int compareTo( Object obj )
 	{
-		Monster rhs = (Monster)obj;
+		Monsters rhs = (Monsters)obj;
 
 
 
